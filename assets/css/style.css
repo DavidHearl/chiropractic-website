@@ -10,38 +10,53 @@
     width: 221px;
     height: 75px;
 }
+/*Navigation*/
 #menu{
     font-size: 110%;
+    /*text-align: center;*/
     letter-spacing: 4px;
-    line-height: 75px; 
+    height: 100px;
+    line-height: 35px;
 }
-#menu li{
-    float: right;
-    list-style-type: none;
-    margin-right: 50px;
-    margin-left: 30px;
+#menu > li{
+    margin-right:10px;
+    margin-left:10px;
+    padding: 20px 2%;
+    display: inline-block;
 }
 #menu a{
     text-decoration: none;
-    color: #63b0a6;
+    color:#63b0a6;
     font-weight: 600;
 }
 #menu a:hover{
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #63b0a6;
 }
-.active{
-    border-bottom: 1px solid #3a3a3a;
+/*Content*/
+#left-pane{
+    width: 43%;
+    float: left;
+    margin-left: 5%;
 }
-#hero-image{
-    height: 500px;
-    width: 100%;
-    background: url(../images/hero-image.jpg) no-repeat center center;
-
-    animation-name: hero-zoom;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
+#left-sub-left-pane{
+    float: left;
+    width: 50%;
 }
-@keyframes hero-zoom{
-    from{transform: scale(1);}
-    to{transform: scale(1.05);}
-} 
+#right-sub-left-pane{
+    width: 50%;
+    float: right;
+}
+#right-pane{
+    width: 43%;
+    float: right;
+    margin-right: 5%;
+}
+p{
+    margin:10px;
+    padding: 10px;
+    color: gray;
+}
+div > ul{
+    margin-left: 50px;
+    color: gray;
+}
