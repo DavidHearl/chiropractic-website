@@ -17,13 +17,14 @@
 /*Navigation*/
 #menu{
     font-size: 110%;
-    float: right;
+    /*float: right;*/
     margin-right: 10%;
     letter-spacing: 4px;
     height: 100px;
     line-height: 35px;
 }
 #menu > li{
+    float: right;
     margin-right:10px;
     margin-left:10px;
     padding: 20px;
@@ -38,30 +39,42 @@
     border-bottom: 1px solid #63b0a6;
 }
 /*Content*/
+#top-section{
+    height:750px;
+}
+#hero-placeholder{
+    width:80%;
+    height:400px;
+    background-color:#63b0a6;
+    margin-left: 10%;
+}
+/*div .hero-img{
+    margin-left: 29%;
+}*/
 #left-pane{
-    width: 43%;
+    width: 30%;
     float: left;
-    margin-left: 5%;
-}
-#left-sub-left-pane{
-    float: left;
-    width: 50%;
-}
-#right-sub-left-pane{
-    width: 50%;
-    float: right;
+    margin-left: 15%;
 }
 #right-pane{
-    width: 43%;
+    width: 30%;
     float: right;
-    margin-right: 5%;
+    margin-right: 15%;
 }
-#right-sub-left-pane > a{
-    background-color: green;
-    padding:10px;
-    border-radius: 10px;
-    margin: 10px;
+#right-pane a{
+    display: block;
+    width: 300px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: #63b0a6;
+    text-align: center;
+    color: white;
+    border-radius: 40px;
+    margin-top: 40px;
+    font-size: 110%;
+    font-weight: 600;
 }
+
 p{
     margin:10px;
     padding: 10px;
