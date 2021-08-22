@@ -7,13 +7,18 @@
 /*Navigation Menu*/
 #logo{
     float: left;
+    margin-left: 10%;
     width: 221px;
     height: 75px;
+}
+#active{
+    border-bottom: 1px solid #63b0a6;
 }
 /*Navigation*/
 #menu{
     font-size: 110%;
-    /*text-align: center;*/
+    float: right;
+    margin-right: 10%;
     letter-spacing: 4px;
     height: 100px;
     line-height: 35px;
@@ -21,7 +26,7 @@
 #menu > li{
     margin-right:10px;
     margin-left:10px;
-    padding: 20px 2%;
+    padding: 20px;
     display: inline-block;
 }
 #menu a{
@@ -67,7 +72,14 @@ div > ul{
     color: gray;
 }
 footer{
-    width: 100px;
+    width: 80%;
     height: 100px;
-    background-color: green;
+    background-color: #63b0a626;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+footer p{
+    width:25%;
 }
