@@ -9,8 +9,10 @@
 </head>
 <body>
 
-    <h1>New Patient Form</h1>
+    
     <form method="POST">
+<h1>New Patient Form</h1>
+
         <label>Name</label>
         <input type="text">
         <label>Date of Birth</label>
@@ -24,7 +26,49 @@
         <label>Occupation</label>
         <input type="text">
 
+        <p>Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
+            We need all the facts about your health before we accept your case. <strong>THIS IS A CONFIDENTIAL HEALTH REPORT</strong>
+        </p>
+
+        <div id="checkboxes">
+            <div>
+                <input type="checkbox">Loss of Energy
+                <input type="checkbox">Loss of Weight
+                <input type="checkbox">Headaches
+                <input type="checkbox">Fainting
+                <input type="checkbox">Convulsions
+                <input type="checkbox">Loss of Sleep  
+            </div>
+            <div>
+                <input type="checkbox">Low Blood Pressure
+                <input type="checkbox">Swelling of ankles
+                <input type="checkbox">High Blood Pressure
+                <input type="checkbox">Stroke
+                <input type="checkbox">Bruise Easily
+                <input type="checkbox">Tremors
+            </div>
+            <div>
+                <input type="checkbox">Poor Appetite
+                <input type="checkbox">Nausea
+                <input type="checkbox">Vomiting
+                <input type="checkbox">Poor Bladder Control
+                <input type="checkbox">Dizziness
+                <input type="checkbox">Psoriasis
+            </div>
+            <div>
+                <input type="checkbox">Prostate
+                <input type="checkbox">Arthritis
+                <input type="checkbox">Cancer
+                <input type="checkbox">Depression
+                <input type="checkbox">Migraine
+                <input type="checkbox">Asthma 
+            </div>
+        </div>
         
+
+
+
+
         <input type="submit">
     </form>
 
