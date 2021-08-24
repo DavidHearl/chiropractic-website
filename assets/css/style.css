@@ -45,8 +45,6 @@ nav{
 }
 /*Content*/
 #hero-placeholder{
-    /*position: relative;
-    top: 75px;*/
     width:80%;
     height:400px;
     background-color:#63b0a6;
@@ -62,13 +60,8 @@ nav{
     padding: 4px;
     margin-left: 25%;
     margin-right:25%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
-/*#top-section{
-    position: relative;
-    height:750px;
-    top: 75px;
-}*/
 #text-pane{
     margin-top: 30px;
     width: 30%;
@@ -96,24 +89,6 @@ nav{
     text-align: center;
     border-radius: 50%;
 }
-/*#right-pane{
-    width: 30%;
-    float: right;
-    margin-right: 15%;
-}
-#right-pane a{
-    display: block;
-    width: 300px;
-    padding-top:25px;
-    padding-bottom: 30px;
-    background-color: #63b0a6;
-    text-align: center;
-    color: white;
-    border-radius: 40px;
-    margin-top: 40px;
-    font-size: 130%;
-    font-weight: 600;
-}*/
 p{
     margin:10px;
     padding: 10px;
@@ -145,5 +120,29 @@ footer p{
     position: absolute;
     left: 40%;
     bottom: 60px;
+}
+/*Form*/
+label{
+    margin-left: 10%;
+    width: 80%;
+}
+input[type=text], input[type=email], select{
+    width: 80%;
+    margin: 5px 10%;
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=submit] {
+    width: 80%;
+    margin: 5px 10%;
+    background-color: #63b0a6;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: 600;
+    cursor: pointer;
 }
 
