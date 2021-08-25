@@ -73,25 +73,106 @@
                 </ul>
             </div>
         </div>
+
         <p><strong>Date of Last</strong></p>
-        <ul>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Physical Examination</li>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Blood Test</li>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Spinal x-ray</li>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Urine Test</li>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Smear</li>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Self Breast Exam</li>
-            <li><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">Self Testicular Exam</li>
-        </ul>
+        <table>
+            <tr>
+                <th> </th>
+                <th>Less then 6 months</th>
+                <th>6-18 Months</th>
+                <th>Over 18 Months</th>
+                <th>Never</th>
+            </tr>
+            <tr>
+                <td>Physical Examination</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Blood Test</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Spinal x-ray</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Urine Test</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Smear</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Self Breast Exam</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Self Testicular Exam</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+
         <p><strong>Have You Ever</strong></p>
-        <ul>
-            <li>Been Knocked Unconcious?<input type="radio"><input type="radio"></li>
-            <li>Used a cane, crutch or other support?<input type="radio"><input type="radio"></li>
-            <li>Been treated for a spine or nerve disorder?<input type="radio"><input type="radio"></li>
-            <li>Had a fractured bone?<input type="radio"><input type="radio"></li>
-            <li>Been hospitalised for surgery<input type="radio"><input type="radio"></li>
-            <li>Been hospitalised other than surgery?<input type="radio"><input type="radio"></li>
-        </ul>
+        <table>
+            <tr>
+                <th> </th>
+                <th>Yes</th>
+                <th>No</th>
+            </tr>
+            <tr>
+                <td>Been Knocked Unconcious?</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Used a cane, crutch or other support?</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Been treated for a spine or nerve disorder?</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Had a fractured bone?</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Been hospitalised for surgery</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>Been hospitalised other than surgery?</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+
+        </table>
 
         <p>Is this condition interfering with your: 
             <input type="checkbox">Work
@@ -106,13 +187,16 @@
         <input type="text">
         <p><strong>Please mark the diagrams with your current problem, using the key below</strong></p>
 
-
-
-
+        <div id="key">
+            <p>Please diagram your pain</p>
+            <ol>
+                <li>Circle Areas of pain</li>
+                <li>Mark the most painful spot with an X</li>
+                <li>Use arrows to show where the pain goes (radiates)</li>
+                <li>Mark any areas of numbness/tingling with an N or T</li>
+            </ol>
+        </div>  
         <input type="submit">
     </form>
-
-   
-
 </body>
 </html>
