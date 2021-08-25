@@ -124,7 +124,7 @@ footer p{
 /*Form*/
 form{
     border: 2px solid #63b0a6;
-    margin: 10px 10%;
+    margin: 10px 20%;
     border-radius: 20px;
 }
 h1{
@@ -137,18 +137,18 @@ h1{
     padding: 5px;
 }
 form > p{
-    margin: 10px 10%;
-    font-size: 110%;
+    margin: 10px 5%;
+    font-size: 115%;
 }
 label{
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     font-size: 120%;
     font-weight: 600;
 }
 input[type=text], input[type=email], select{
-    width: 80%;
-    margin: 5px 10%;
+    width: 90%;
+    margin: 5px 5%;
     padding: 8px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -156,8 +156,8 @@ input[type=text], input[type=email], select{
     font-size: 110%;
 }
 input[type=submit] {
-    width: 80%;
-    margin: 5px 10%;
+    width: 90%;
+    margin: 10px 5%;
     background-color: #63b0a6;
     color: white;
     padding: 12px;
@@ -171,14 +171,14 @@ input[type=checkbox]{
     height: 14px;
 }
 #checkboxes{
-    display: inline-block;
+    margin-left: 5%;
 }
 #checkboxes div{
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10%;
-    width: 10%;
-    
+    display:inline-block;
+    width: 24%;
+}
+div ul{
+    list-style: none;
 }
 
 
