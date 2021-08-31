@@ -121,6 +121,7 @@ footer p{
     left: 40%;
     bottom: 60px;
 }
+
 /*Form*/
 form{
     border: 2px solid #63b0a6;
@@ -136,12 +137,40 @@ h1{
     border-radius: 10px;
     padding: 5px;
 }
-#personal-details{
-    background-color: rgba(136, 255, 239, 0.25);
+.background-and-offsets{
+    background-color: rgba(7, 34, 30, 0.25);
     margin: 10px;
     border-radius: 10px;
     padding: 5px;
 }
+
+
+#left-side, #right-side{
+    width: 47%;
+    display: inline-block;
+}
+
+#left-side{
+    float: left;
+    background-color: brown;
+}
+#right-side{
+    float: right;
+    background-color: blue;
+}
+#left-side > div{
+      display: inline-block;  
+}
+#right-side > div{
+    display: inline-block;  
+}
+div ul{
+    list-style: none;
+    margin-left: 0.5%;
+}
+
+
+
 label{
     font-size: 120%;
     font-weight: 600;
@@ -171,36 +200,15 @@ input[type=checkbox]{
     width: 30px;
     height: 14px;
 }
-#checkboxes{
-    margin-left: 0.5%;
-    background-color: black;
-    border-radius: 10px;
-}
 #checkboxes div{
     display:inline-block;
     width: 24.5%;
 }
-#left-side{
-    width: 50%;
-    float: left;
-    background-color: brown;
 
-}
-#left-side > div{
-      display: inline-block;  
-}
-#right-side{
-    width: 50%;
-    float: right;
-    background-color: blue;
-}
-div ul{
-    list-style: none;
-}
-table{
-    margin-left: 5%;
-    width: 50%;
-}
+
+
+
+
 #key{
     margin-left:5%;
     width: 25%;
@@ -220,6 +228,14 @@ input[type=submit] {
     font-size: 120%;
     font-weight: 600;
     cursor: pointer;
+}
+/*Screen sizes under 1200px width*/
+@media screen and (max-width: 1200px) {
+    form{
+        border: 2px solid #63b0a6;
+        margin: 5px 10%;
+        border-radius: 20px;
+    }
 }
 /*Screen sizes under 950px width*/
 @media screen and (max-width: 950px) {
