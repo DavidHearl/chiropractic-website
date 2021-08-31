@@ -43,6 +43,9 @@ nav{
 #menu a:hover{
     border-bottom: 2px solid #63b0a6;
 }
+
+
+
 /*Content*/
 #hero-placeholder{
     width:80%;
@@ -89,11 +92,6 @@ nav{
     text-align: center;
     border-radius: 50%;
 }
-p{
-    margin:10px;
-    padding: 10px;
-    color:#333333;
-}
 div > ul{
     margin-left: 50px;
     color: #636363;
@@ -121,7 +119,13 @@ footer p{
     left: 40%;
     bottom: 60px;
 }
-
+h2{
+    font-size:110%;
+    color: #63b0a6;
+}
+p{
+    color:#333333;
+}
 
 
 /*Form*/
