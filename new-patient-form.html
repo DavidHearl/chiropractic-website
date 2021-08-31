@@ -37,7 +37,7 @@
         </p>
         
         <div class="background-and-offsets" id="checkboxes">
-            <p id="form-info">
+            <p>
                 Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
                 We need all the facts about your health before we accept your case. <strong>THIS IS A CONFIDENTIAL HEALTH REPORT.</strong>
             </p>
@@ -86,10 +86,9 @@
         </div>
 
         <div class="background-and-offsets" id="left-side">
-            <h2>Date of Last</h2>
-            <div>
+            <div class="checkbox-heading">
                 <ul>
-                    <li><label> </label></li>
+                    <li><h2>Date of Last:</h2></li>
                     <li>Physical Examination</li>
                     <li>Blood Test</li>
                     <li>Spinal x-ray</li>
@@ -99,9 +98,9 @@
                     <li>Self Testicular Exam</li>
                 </ul>
             </div>
-            <div>
+            <div class="checkboxes">
                 <ul>
-                    <label>6</label>
+                    <label class="checkbox-title">6m</label>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
@@ -111,9 +110,9 @@
                     <li><input type="checkbox"></li>
                 </ul>
             </div>
-            <div>
+            <div class="checkboxes">
                 <ul>
-                    <label>6-18</label>
+                    <label class="checkbox-title">6-18m</label>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
@@ -123,9 +122,9 @@
                     <li><input type="checkbox"></li>
                 </ul>
             </div>
-            <div>
+            <div class="checkboxes">
                 <ul>
-                    <label>18+</label>
+                    <label class="checkbox-title">18m+</label>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
@@ -135,9 +134,9 @@
                     <li><input type="checkbox"></li>
                 </ul>
             </div>
-            <div>    
+            <div class="checkboxes">   
                 <ul>
-                    <label>Never</label>
+                    <label class="checkbox-title">Never</label>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
                     <li><input type="checkbox"></li>
@@ -150,9 +149,9 @@
         </div>
 
         <div class="background-and-offsets" id="right-side">
-            <h2>Have You Ever</h2>
-            <div>
+            <div class="radio-heading">
                 <ul>
+                    <li><h2>Have You Ever:</h2></li>
                     <li>Been Knocked Unconcious?</li>
                     <li>Used a cane, crutch or other support?</li>
                     <li>Been treated for a spine or nerve disorder?</li>
@@ -161,8 +160,9 @@
                     <li>Been hospitalised other than surgery?</li>
                 </ul>
             </div>
-            <div>
+            <div class="radio-boxes">
                 <ul>
+                    <li><label class="checkbox-title">Yes</label></li>
                     <li><input type="radio"></li>
                     <li><input type="radio"></li>
                     <li><input type="radio"></li>
@@ -171,8 +171,9 @@
                     <li><input type="radio"></li>
                 </ul>
             </div>
-            <div>
+            <div class="radio-boxes">
                 <ul>
+                    <li><label class="checkbox-title">No</label></li>
                     <li><input type="radio"></li>
                     <li><input type="radio"></li>
                     <li><input type="radio"></li>
@@ -183,7 +184,7 @@
             </div>
         </div>
 
-        <div class="background-and-offsets">
+        <div class="background-and-offsets" id="questions">
             <label>Is this condition interfering with your: 
                 <input type="checkbox">Work
                 <input type="checkbox">Sleep
