@@ -131,51 +131,68 @@ h1{
     margin: 10px;
     text-align: center;
     font-size: 150%;
-    background-color: #63b0a6;
-    color: white;
+    background-color: #9fdad2;
+    color: #636363;
     border-radius: 10px;
     padding: 5px;
 }
-form > p{
-    margin: 10px 5%;
-    font-size: 115%;
+#personal-details{
+    background-color: rgba(136, 255, 239, 0.25);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
 }
 label{
-    margin-left: 5%;
-    width: 90%;
     font-size: 120%;
     font-weight: 600;
+    margin: 0.5%;
+    color: #636363;
 }
-input[type=text], input[type=email], select{
-    width: 90%;
-    margin: 5px 5%;
-    padding: 8px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input[type=text], input[type=email]{
+    width: 98%;
+    padding: 6px 0.5%;
+    margin: 4px 0.5%;
+    border: 1px solid #636363;
+    border-radius: 6px;
     font-size: 110%;
 }
-input[type=submit] {
-    width: 90%;
-    margin: 10px 5%;
-    background-color: #63b0a6;
-    color: white;
-    padding: 12px;
-    border-radius: 5px;
-    font-size: 120%;
-    font-weight: 600;
-    cursor: pointer;
+#gp-consent{
+    text-align: center;
+    font-size:120%
+}
+#form-info{
+    margin: 10px;
+    font-size:120%
+}
+h2{
+    margin-left: 1%;
 }
 input[type=checkbox]{
     width: 30px;
     height: 14px;
 }
 #checkboxes{
-    margin-left: 5%;
+    margin-left: 0.5%;
+    background-color: black;
+    border-radius: 10px;
 }
 #checkboxes div{
     display:inline-block;
-    width: 24%;
+    width: 24.5%;
+}
+#left-side{
+    width: 50%;
+    float: left;
+    background-color: brown;
+
+}
+#left-side > div{
+      display: inline-block;  
+}
+#right-side{
+    width: 50%;
+    float: right;
+    background-color: blue;
 }
 div ul{
     list-style: none;
@@ -190,5 +207,25 @@ table{
     border:1px solid black;
     border-radius: 5px;
 }
-
-
+input[type=submit] {
+    width: 98%;
+    margin: 10px;
+    text-align: center;
+    font-size: 150%;
+    background-color: #9fdad2;
+    color: #636363;
+    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*Screen sizes under 950px width*/
+@media screen and (max-width: 950px) {
+    form{
+        border: 2px solid #63b0a6;
+        margin: 5px 2%;
+        border-radius: 20px;
+    }
+}

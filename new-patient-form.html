@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <title>Duncan Lightfoot | Chiropractor</title>
+    <title>Duncan Lightfoot | New Patient Form</title>
 </head>
+
 <body>
-
-    
     <form method="POST">
-<h1>New Patient Form</h1>
-
-        <label>Name</label>
-        <input type="text">
-        <label>Date of Birth</label>
-        <input type="text">
-        <label>Address</label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <label>Email</label>
-        <input type="email">
-        <label>Occupation</label>
-        <input type="text">
-        <p>Do you concent to your G.P. being informed <input type="radio">Yes <input type="radio">No</p>
+        <h1>New Patient Form</h1>
+        <div id="personal-details">
+            <label>Name:</label>
+            <input type="text">
+            
+            <label>Date of Birth:</label>
+            <input type="text">
+            
+            <label>Address:</label>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            
+            <label>Email:</label>
+            <input type="email">
+            
+            <label>Occupation:</label>
+            <input type="text">
+        </div>
         
-        <p>Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
-            We need all the facts about your health before we accept your case. <strong>THIS IS A CONFIDENTIAL HEALTH REPORT</strong>
+        <p id="gp-consent">
+            Do you consent to your G.P. being informed: 
+            <input type="radio" class="consent" name="consent"><strong>Yes</strong> 
+            <input type="radio" class="consent" name="consent"><strong>No</strong>
         </p>
-
+        
         <div id="checkboxes">
+            <p id="form-info">
+                Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
+                We need all the facts about your health before we accept your case. <strong>THIS IS A CONFIDENTIAL HEALTH REPORT.</strong>
+            </p>
+            <p>Please tick the left box for past and the right for present </p>
+
             <div>
                 <ul>
                     <li><input type="checkbox"><input type="checkbox">Loss of Energy</li>
@@ -74,118 +85,119 @@
             </div>
         </div>
 
-        <p><strong>Date of Last</strong></p>
-        <table>
-            <tr>
-                <th> </th>
-                <th>Less then 6 months</th>
-                <th>6-18 Months</th>
-                <th>Over 18 Months</th>
-                <th>Never</th>
-            </tr>
-            <tr>
-                <td>Physical Examination</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Blood Test</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Spinal x-ray</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Urine Test</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Smear</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Self Breast Exam</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Self Testicular Exam</td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-        </table>
+        <div id="left-side">
+            <h2>Date of Last</h2>
+            <div>
+                <ul>
+                    <li><label> </label></li>
+                    <li>Physical Examination</li>
+                    <li>Blood Test</li>
+                    <li>Spinal x-ray</li>
+                    <li>Urine Test</li>
+                    <li>Smear</li>
+                    <li>Self Breast Exam</li>
+                    <li>Self Testicular Exam</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <label>6</label>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <label>6-18</label>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <label>18+</label>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                </ul>
+                <ul>
+                    <label>Never</label>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                    <li><input type="checkbox"></li>
+                </ul>
+            </div>
+        </div>
 
-        <p><strong>Have You Ever</strong></p>
-        <table>
-            <tr>
-                <th> </th>
-                <th>Yes</th>
-                <th>No</th>
-            </tr>
-            <tr>
-                <td>Been Knocked Unconcious?</td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-            </tr>
-            <tr>
-                <td>Used a cane, crutch or other support?</td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-            </tr>
-            <tr>
-                <td>Been treated for a spine or nerve disorder?</td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-            </tr>
-            <tr>
-                <td>Had a fractured bone?</td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-            </tr>
-            <tr>
-                <td>Been hospitalised for surgery</td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-            </tr>
-            <tr>
-                <td>Been hospitalised other than surgery?</td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-            </tr>
+        <div id="right-side">
+            <h2>Have You Ever</h2>
+            <div>
+                <ul>
+                    <li>Been Knocked Unconcious?</li>
+                    <li>Used a cane, crutch or other support?</li>
+                    <li>Been treated for a spine or nerve disorder?</li>
+                    <li>Had a fractured bone?</li>
+                    <li>Been hospitalised for surgery</li>
+                    <li>Been hospitalised other than surgery?</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                    <li><input type="radio"></li>
+                </ul>
+            </div>
+        </div>
 
-        </table>
-
-        <p>Is this condition interfering with your: 
-            <input type="checkbox">Work
-            <input type="checkbox">Sleep
-            <input type="checkbox">Daily Routine
-            <input type="checkbox">Other (Specify Below)
+        <div>
+            <label>Is this condition interfering with your: 
+                <input type="checkbox">Work
+                <input type="checkbox">Sleep
+                <input type="checkbox">Daily Routine
+                <input type="checkbox">Other (Specify Below)
+                <input type="text">
+            </label>
+            
+            <label>During this past month, has it been too painful to do many of your day-to-day activites.</label>
             <input type="text">
-        </p>
-        <p>During this past month, has it been too painful to do many of your day-to-day activites.</p>
-        <input type="text">
-        <p>During this past month, has your pain bee bad enough to often make you feel worried or low in mood.</p>
-        <input type="text">
-        <p><strong>Please mark the diagrams with your current problem, using the key below</strong></p>
+
+            <label>During this past month, has your pain bee bad enough to often make you feel worried or low in mood.</label>
+            <input type="text">
+
+            <p><strong>Please mark the diagrams with your current problem, using the key below</strong></p>
+        </div>
 
         <div id="key">
             <p>Please diagram your pain</p>
@@ -195,7 +207,8 @@
                 <li>Use arrows to show where the pain goes (radiates)</li>
                 <li>Mark any areas of numbness/tingling with an N or T</li>
             </ol>
-        </div>  
+        </div>      
+               
         <input type="submit">
     </form>
 </body>
