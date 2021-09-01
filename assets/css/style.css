@@ -242,6 +242,28 @@ input[type=submit] {
     font-weight: 600;
     cursor: pointer;
 }
+
+/*Screen sizes under 1500px width*/
+@media screen and (max-width: 1500px) {
+    #menu{
+        font-size: 100%;
+        letter-spacing: 2px;
+        line-height: 45px;
+    }
+    #menu > li{
+        margin-right:5px;
+        margin-left:5px;
+        padding: 15px;
+    }
+    form{
+        border: 2px solid #63b0a6;
+        margin: 5px 10%;
+        border-radius: 20px;
+    }
+    #left-side, #right-side{
+        width: 92%;
+    }
+
 /*Screen sizes under 1200px width*/
 @media screen and (max-width: 1200px) {
     form{
@@ -252,10 +274,10 @@ input[type=submit] {
     #left-side, #right-side{
         width: 92%;
     }
-
 }
-/*Screen sizes under 950px width*/
-@media screen and (max-width: 950px) {
+
+/*Screen sizes under 900px width*/
+@media screen and (max-width: 900px) {
     form{
         border: 2px solid #63b0a6;
         margin: 5px 2%;
