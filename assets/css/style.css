@@ -42,7 +42,7 @@ nav{
 #menu a:hover{
     background-color:rgba(99,176,166,0.5);
     padding: 20px 28px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /*Content*/
@@ -72,8 +72,12 @@ nav{
 #text-block{
     float: left;
 }
-p{margin: 20px;}
-div > ul > li{margin-left: 40px;}
+#text-block > p{
+    margin: 20px;
+}
+#text-block > div > ul > li{
+    margin-left: 40px;
+}
 #make-appointment, #patient-form{
     font-size: 120%;
     font-weight: 600;
@@ -104,15 +108,30 @@ footer p{
     margin: 0;
 }
 
-
 .left-column, .right-column{
-    width: 45%;
+    width: 50%;
     display: inline-block;
 }
+.right-column{
+    float: right;
+}
 h2{
-    font-size:110%;
+    font-size:115%;
     color: #63b0a6;
 }
+.left-column > div > ul{
+    list-style: disc;
+    margin-left: 30px;
+}
+.faq{
+    margin: 30px 20px;
+    font-size: 105%;
+}
+.faq > p{
+    margin:10px 0;
+    letter-spacing: .5px;
+}
+
 
 
 /*Form*/
@@ -275,9 +294,14 @@ input[type=submit] {
     .home-content{
         width: 99%;
     }
+    .left-column, .right-column{
+        width: 100%;
+        display: inline-block;
+    }
     form{
         border: 2px solid #63b0a6;
         margin: 5px 2%;
         border-radius: 20px;
     }
+}
 }
