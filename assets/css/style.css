@@ -11,35 +11,29 @@
     height: 100%;
 }
 
-/*Navigation Menu*/
+/*Navigation*/
 nav{
-    width:100%;
     background-color: white;
     height: 75px;
     z-index: 1;
 }
 #logo{
     float: left;
-    /*margin-left: 10%;*/
     width: 221px;
     height: 75px;
 }
+
 #active{
     border-bottom: 1px solid #63b0a6;
 }
 #menu{
     font-size: 110%;
-    /*margin-right: 10%;*/
-    letter-spacing: 4px;
-    height: 100px;
+    letter-spacing: 3px;
     line-height: 35px;
 }
 #menu > li{
     float: right;
-    margin-right:10px;
-    margin-left:10px;
-    padding: 20px;
-    display: inline-block;
+    padding: 20px 28px;
 }
 #menu a{
     text-decoration: none;
@@ -47,7 +41,9 @@ nav{
     font-weight: 600;
 }
 #menu a:hover{
-    border-bottom: 2px solid #63b0a6;
+    background-color:rgba(99,176,166,0.5);
+    padding: 20px 28px;
+    border-radius: 4px;
 }
 
 /*Content*/
