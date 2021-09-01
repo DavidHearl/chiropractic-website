@@ -64,74 +64,55 @@ nav{
 }
 .home-content{
     display: inline-block;
-    background-color: rgb(33, 170, 175);
     width: 50%;
-    height: 300px;
+    height: 100%;
     border-radius: 10px;
+    font-size: 105%;
 }
 #text-block{
     float: left;
 }
+p{margin: 20px;}
+div > ul > li{margin-left: 40px;}
 #make-appointment, #patient-form{
-    font-size: 110%;
+    font-size: 120%;
     font-weight: 600;
     width: 80%;
-    height: 35%;
-    margin: 30px auto;
-    background-color: chartreuse;
+    height: 40%;
+    margin: 5% auto;
+    background-color: #63b0a6;
     border-radius: 20px;
     text-align: center;
     vertical-align: middle;
     line-height: 100px;
 }
-
-
-
-div > ul{
-    margin-left: 50px;
-    color: #636363;
+#make-appointment a:hover, #patient-form a:hover{
+    background-color:rgba(99,176,166,0.5);
+    padding: 20px 28px;
+    border-radius: 5px;
 }
 footer{
-    /*position: fixed;*/
-    bottom: 0px;
     width: 100%;
-    /*margin-left: 10%;*/
     height: 100px;
     background-color: #9fdad2;
 }
+footer div{
+    display: inline-block;
+    width: 24%;
+}
 footer p{
-    width:20%;
-    font-size: 105%;
-    letter-spacing: 0.5px;
-    border-radius: 10px;
+    margin: 0;
 }
-#gcc{
-    position: absolute;
-    left: 30%;
-    bottom:60px;
-}
-#bca{
-    position: absolute;
-    left: 40%;
-    bottom: 60px;
-}
-h2{
-    font-size:110%;
-    color: #63b0a6;
-    /*margin-top: 10px;*/
-    /*padding:5px;*/
-}
-p{
-    color:#333333;
-}
-section{
-    margin: 10px 12%;  
-}
+
+
 .left-column, .right-column{
     width: 45%;
     display: inline-block;
 }
-
+h2{
+    font-size:110%;
+    color: #63b0a6;
+}
 
 
 /*Form*/
