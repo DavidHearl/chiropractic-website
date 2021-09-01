@@ -131,7 +131,13 @@ h2{
     margin:10px 0;
     letter-spacing: .5px;
 }
-
+.covid{
+    background-color: coral;
+    margin: 10px 0;
+}
+.covid > p{
+    margin:20px 10px;
+}
 
 
 /*Form*/
