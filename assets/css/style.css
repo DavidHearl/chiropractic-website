@@ -122,16 +122,26 @@ footer p{
 h2{
     font-size:110%;
     color: #63b0a6;
+    margin-top: 10px;
+    padding:5px;
 }
 p{
     color:#333333;
 }
+section{
+    margin: 10px 12%;  
+}
+.left-column, .right-column{
+    width: 45%;
+    display: inline-block;
+}
+
 
 
 /*Form*/
 form{
     border: 2px solid #63b0a6;
-    margin: 10px 20%;
+    margin: 20px 20%;
     border-radius: 20px;
 }
 h1{
