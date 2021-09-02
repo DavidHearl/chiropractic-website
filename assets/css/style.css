@@ -309,32 +309,31 @@ input[type=submit] {
     }
 
     /*Hamburger Menu*/
-    #menu-toggle{
-        display: block;
+    /*#menu-toggle{
+        /*display: block;
         top: 50px;
-        left: 50px;
-        z-index: 1;
-  
-        -webkit-user-select: none;
+        right: 50px;
+        z-index: 1;*/
+        /*-webkit-user-select: none;
         user-select: none;
-    }
+    }*/
     #menu-toggle input{
         display: block;
+        position: relative;
         width: 40px;
         height: 32px;
-        position: absolute;
-        top:16px;
-        right:20px;
+        top:20px;
+        right: 4px;
         cursor: pointer;
-        /*opacity: 0;*/
+        opacity: 0.2;
         z-index: 2;
     }
     #menu-toggle span{
         display: block;
+        position: relative;
         width: 33px;
         height: 4px;
         margin-bottom: 5px;
-        position: relative;
         background-color: #636363;
         border-radius: 4px;
         z-index: 1;
@@ -342,23 +341,23 @@ input[type=submit] {
         transition: transform 0.5s cubic-bezier(0.7,0.2,0.1,1.0),
                     opacity 0.5s ease;
     }
-    #menu-toggle span:first-child{
+    #menu-toggle span:nth-child(3){
         transform-origin: 0% 0%;
     }
-    #menu-toggle span:nth-last-child(2){
+    #menu-toggle span:nth-child(4){
         transform-origin: 0% 100%;
     }
     #menu-toggle input:checked ~ span{
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background-color:brown;
-    }
-    #menu-toggle input:checked ~ span:nth-last-child(3){
+    } 
+    #menu-toggle input:checked ~ span:nth-child(3){
         opacity: 0;
         transform: rotate(0deg) scale(0.2,0.2);
     }
-    #menu-toggle input:checked ~ span:nth-last-child(2){
-        transform: rotate(-45deg) translate(0, -1px);
+    #menu-toggle input:checked ~ span:nth-child(4){
+        transform: rotate(-45deg) translate(0, -2px);
     }
     #menu{
         position: absolute;
@@ -377,7 +376,8 @@ input[type=submit] {
         padding: 10px 0;
         font-size: 22px;
     }
-    #menuToggle input:checked ~ ul{
+    #menu-toggle input:checked ~ ul{
         transform: none;
     }
+    #logo{float: right;}*/
 }
