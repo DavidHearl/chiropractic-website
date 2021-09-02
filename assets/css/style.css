@@ -25,7 +25,7 @@ nav{
 #active{
     border-bottom: 1px solid #63b0a6;
 }
-#menu{
+/*#menu{
     font-size: 110%;
     letter-spacing: 3px;
     line-height: 35px;
@@ -41,7 +41,7 @@ nav{
 }
 #menu a:hover{
     color: #63b0a6;
-}
+}*/
 
 /*Content*/
 .hero-placeholder{
@@ -309,20 +309,12 @@ input[type=submit] {
     }
 
     /*Hamburger Menu*/
-    /*#menu-toggle{
-        /*display: block;
-        top: 50px;
-        right: 50px;
-        z-index: 1;*/
-        /*-webkit-user-select: none;
-        user-select: none;
-    }*/
     #menu-toggle input{
         display: block;
         position: relative;
         width: 40px;
         height: 32px;
-        top:20px;
+        top:18px;
         right: 4px;
         cursor: pointer;
         opacity: 0.2;
@@ -331,53 +323,60 @@ input[type=submit] {
     #menu-toggle span{
         display: block;
         position: relative;
-        width: 33px;
+        bottom:8px;
+        width: 32px;
         height: 4px;
         margin-bottom: 5px;
         background-color: #636363;
         border-radius: 4px;
         z-index: 1;
-        transform-origin: 4px 0;
-        transition: transform 0.5s cubic-bezier(0.7,0.2,0.1,1.0),
-                    opacity 0.5s ease;
-    }
-    #menu-toggle span:nth-child(3){
-        transform-origin: 0% 0%;
-    }
-    #menu-toggle span:nth-child(4){
-        transform-origin: 0% 100%;
+        transform-origin: center;
+        transition: transform 0.3s /*cubic-bezier(0.7,0.2,0.1,1.0)*/,
+                    opacity 0.3s ease;
     }
     #menu-toggle input:checked ~ span{
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background-color:brown;
+        transform: rotate(45deg) translate(6px, 6px);
+        background-color:red;
     } 
     #menu-toggle input:checked ~ span:nth-child(3){
         opacity: 0;
         transform: rotate(0deg) scale(0.2,0.2);
     }
     #menu-toggle input:checked ~ span:nth-child(4){
-        transform: rotate(-45deg) translate(0, -2px);
-    }
-    #menu{
-        position: absolute;
-        width: 300px;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
-        background: #ededed;
-        list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    }
-    #menu li{
-        padding: 10px 0;
-        font-size: 22px;
+        transform: rotate(-45deg) translate(7px, -7px);
     }
     #menu-toggle input:checked ~ ul{
         transform: none;
     }
-    #logo{float: right;}*/
+
+
+    #menu{
+        display: block;
+        background-color: #9fdad2;
+        font-size: 110%;
+        letter-spacing: 3px;
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+        transform: translate(0%, -120%);
+        transition: transform 1.0s ;
+        z-index: 10;
+    }
+    #menu > li{
+        
+        padding: 20px 28px;
+        width: 90%;
+        text-align: center;
+    }
+    #menu a{
+        text-decoration: none;
+        color:#636363;
+        font-weight: 600;
+    }
+    #menu a:hover{
+        color: #63b0a6;
+    }
+    #logo{margin: 0 auto;}
+    .hero-img{z-index: -1;}
 }
