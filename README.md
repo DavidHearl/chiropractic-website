@@ -13,3 +13,5 @@ Unfixed Bugs
 Deployment
 
 Credits
+
+'Hamburger menu based off code by Erik Terwan'
