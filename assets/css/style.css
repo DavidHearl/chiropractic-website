@@ -45,6 +45,9 @@ nav{
     color: white;
     border-radius: 10px;
 }
+#hamburger{
+    display: none;
+}
 
 /*Content*/
 .hero-placeholder{
@@ -304,16 +307,16 @@ input[type=submit] {
         position: relative;
         width: 40px;
         height: 32px;
-        top:18px;
+        top:21px;
         right: 4px;
         cursor: pointer;
-        opacity: 0.2;
+        opacity: 0;/*enable to see if in the correct position*/
         z-index: 2;
     }
     #menu-toggle span{
         display: block;
         position: relative;
-        bottom:8px;
+        bottom:6px;
         width: 32px;
         height: 4px;
         margin-bottom: 5px;
@@ -322,7 +325,7 @@ input[type=submit] {
         z-index: 1;
         transform-origin: center;
         transition: transform 0.3s,
-                    opacity 0.3s ease;
+                    opacity 0.2s ease;
     }
     #menu-toggle input:checked ~ span{
         opacity: 1;
@@ -339,23 +342,30 @@ input[type=submit] {
     #menu-toggle input:checked ~ ul{
         transform: none;
     }
-    #menu{
+    #menu-toggle, #menu{
+        display: inline-block;
+    }
+    #menu-toggle input:checked ~ ul{
         display: block;
+        background-color: black;
+        width: 92.5%;
+    }
+    #menu{
+        position: absolute;
+        width: 300px;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
         background-color: #9fdad2;
         font-size: 110%;
         letter-spacing: 3px;
-        width: 100%;
         height: 100%;
-        list-style-type: none;
-        transform: translate(0%, -120%);
+        
+        transform: translate(100%,0%);
         transition: transform 1.0s ;
         z-index: 10;
     }
     #menu > li{
-        
-        padding: 20px 28px;
-        width: 90%;
-        text-align: center;
+        width: 300px;
     }
     #menu a{
         text-decoration: none;
@@ -365,6 +375,4 @@ input[type=submit] {
     #menu a:hover{
         color: #63b0a6;
     }
-    #logo{margin: 0 auto;}
-    .hero-img{z-index: -1;}
 }
