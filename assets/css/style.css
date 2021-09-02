@@ -258,11 +258,6 @@ input[type=submit] {
 
 /*Screen sizes under 1300px width*/
 @media screen and (max-width: 1300px) {
-    .wrapper{
-        max-width: 92.5%;
-        margin: 0 auto;
-        height: 100%;
-    }
     #menu{
         font-size: 100%;
         letter-spacing: 2px;
@@ -283,11 +278,6 @@ input[type=submit] {
 
 /*Screen sizes under 1050px width*/
 @media screen and (max-width: 1050px) {
-    .wrapper{
-        max-width: 92.5%;
-        margin: 0 auto;
-        height: 100%;
-    }
     .home-content{
         width: 99%;
     }
@@ -330,7 +320,6 @@ input[type=submit] {
     #menu-toggle input:checked ~ span{
         opacity: 1;
         transform: rotate(45deg) translate(6px, 6px);
-        background-color:red;
     } 
     #menu-toggle input:checked ~ span:nth-child(3){
         opacity: 0;
@@ -342,37 +331,33 @@ input[type=submit] {
     #menu-toggle input:checked ~ ul{
         transform: none;
     }
-    #menu-toggle, #menu{
-        display: inline-block;
-    }
-    #menu-toggle input:checked ~ ul{
-        display: block;
-        background-color: black;
-        width: 92.5%;
-    }
     #menu{
+        display: none;
+    }
+    #menu-toggle > input:checked ~ #menu{
+        display: block;
+        margin-top: 24px;
+        background-color: #9fdad2;   
+        width: 92.5%;     
         position: absolute;
-        width: 300px;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
-        background-color: #9fdad2;
         font-size: 110%;
         letter-spacing: 3px;
-        height: 100%;
+        border-radius: 10px;
         
-        transform: translate(100%,0%);
-        transition: transform 1.0s ;
-        z-index: 10;
+        /*transform: translate(100%,0%);*/
+        /*transition: transform 1.0s ;*/
+        /*z-index: 10;*/
     }
     #menu > li{
-        width: 300px;
-    }
-    #menu a{
-        text-decoration: none;
-        color:#636363;
-        font-weight: 600;
+        width: 100%;
     }
     #menu a:hover{
-        color: #63b0a6;
+        color: pink;
     }
+    #logo{
+        margin-top:-59px;
+    }
+
 }
