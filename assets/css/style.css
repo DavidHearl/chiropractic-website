@@ -87,7 +87,7 @@ nav{
 .button{
     position: relative;
     bottom: 65px;
-    font-size: 120%;
+    font-size: 125%;
     font-weight: 600;
     width: 80%;
     height: 100px;
@@ -108,22 +108,35 @@ nav{
 }
 .button span:after{
     content: '\00bb';
+    font-size: 140%;
     position: absolute;
     opacity: 0;
-    top: 0;
-    right:10px;
+    top: -1px;
+    right:-40px;
     transition: 0.5s;
 }
 .button:hover span{
-    padding-right: 20px;
+    padding-right: 25px;
 }
-  .button:hover span:after{
+.button:hover span:after{
     opacity: 1;
     right: 0;
 }
+.button a:link{
+    /*color: black;*/
+    text-decoration: none;
+}
+.button a:visited{
+    color: black;
+    
+}
+.button:hover{
+    color :orange;
+}
 
 
-/**/
+
+/*generic page settings*/
 .left-column, .right-column{
     width: 50%;
     display: inline-block;
@@ -345,7 +358,7 @@ input[type=submit] {
     #text-block{
         width: 100%;
     }
-    #make-appointment, #patient-form{
+    .button{
         position: static;
         font-size: 120%;
         font-weight: 600;
@@ -437,5 +450,4 @@ input[type=submit] {
         height: 320px;
         background: url(../images/hero-image.jpg) no-repeat center  center;
     }
-
 }
