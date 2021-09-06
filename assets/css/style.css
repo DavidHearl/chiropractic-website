@@ -210,6 +210,44 @@ footer{
 }
 
 
+/*Popup Form*/
+.overlay{
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.6s;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 0 auto;
+    padding: 20px;
+    background: #e0f5f3;
+    border: 1px solid #63b0a6;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+}
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    transition: all 0.4 s;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.popup .close:hover {
+    color: #1e9989;
+}
+
+
 
 /*Form*/
 form{
@@ -369,6 +407,9 @@ input[type=submit] {
         text-align: center;
         vertical-align: middle;
         line-height: 100px;
+    }
+    .popup {
+        width: 80%;
     }
     /*Hamburger Menu*/
     #menu-toggle input{

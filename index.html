@@ -46,7 +46,18 @@
                 <p>Specially trained in pregnancy related conditions including Symphysis Pubis Dysfunction (SPD) and pelvic alignment.</p>
             </div>
             <div class="home-content" id="buttons">
-                <div id="make-appointment" class="button" style="vertical-align: middle;"><span><a href="#">Make an Appointment</a></span></div>
+                <div id="make-appointment" class="button" style="vertical-align: middle;"><span><a href="#make-appointment-form">Make an Appointment</a></span></div>
+                <div id="make-appointment-form" class="overlay">
+                    <div class="popup">
+                        <h2>Make an Appointment</h2>
+                        <a class="close" href="#">&times;</a>
+                        <form method="post">
+                            <label>Name</label>
+                            <input type="text">
+                        </form>
+                        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=725david%40gmail.com&ctz=Europe%2FLondon" width="100%" height="400px"></iframe>
+                    </div>
+                </div>
                 <div id="patient-form" class="button" style="vertical-align: middle;"><span><a href="new-patient-form.html" target="_blank">New Patient Form</a></span></div>
             </div>
         </main>
