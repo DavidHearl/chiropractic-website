@@ -47,19 +47,30 @@
             <div class="home-content" id="buttons">
                 <div id="make-appointment" class="button" style="vertical-align: middle;"><span><a href="#make-appointment-form">Make an Appointment</a></span></div>
                 <div id="make-appointment-form" class="overlay">
-                    <div class="popup">
-                        <h2>Make an Appointment</h2>
-                        <a class="close" href="#">&times;</a>
-                        <form method="post">
-                            <label>Name</label>
-                            <input type="text">
-                            <label>Phone</label>
-                            <input type="text">
-                            <label>Email</label>
-                            <input type="email">
-                        </form>
-                        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=725david%40gmail.com&ctz=Europe%2FLondon" width="100%" height="400px"></iframe>
-                    </div>
+                    
+                <div class="popup">
+                    <h1>Make an Appointment</h1>
+                    <a class="close" href="#">&times;</a>
+                    <form method="post">
+                        <label>Name</label>
+                        <input type="text">
+                        <label>Phone</label>
+                        <input type="text">
+                        <label>Email</label>
+                        <input type="text">
+                        <div class="left-column">
+                            <label>Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="right-column">
+                            <label>Date</label>
+                            <input type="time">
+                        </div>
+                        <input type="submit">
+                    </form>
+                    <!--<iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=725david%40gmail.com&ctz=Europe%2FLondon" width="100%" height="400px"></iframe>-->
+                </div>
+
                 </div>
                 <div id="patient-form" class="button" style="vertical-align: middle;"><span><a href="new-patient-form.html" target="_blank">New Patient Form</a></span></div>
             </div>
