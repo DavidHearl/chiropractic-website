@@ -491,7 +491,7 @@ input[type=submit] {
         height: 320px;
         background: url(../images/hero-image.jpg) no-repeat center  center;
     }
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 600px) {
         .popup{width: 87%;}
         .overlay{top: 80px;}
     }
