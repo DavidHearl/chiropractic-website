@@ -38,7 +38,7 @@ nav{
     font-weight: 600;
 }
 #menu a:hover{
-    color: #000000;
+    color: #1e9989;
 }
 .active{
     background-color:#63b0a61a;
@@ -87,7 +87,7 @@ nav{
 .button{
     position: relative;
     bottom: 65px;
-    font-size: 125%;
+    font-size: 130%;
     font-weight: 600;
     width: 80%;
     height: 100px;
@@ -99,6 +99,8 @@ nav{
     text-align: center;
     vertical-align: middle;
     line-height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 .button span{
     cursor: pointer;
@@ -108,10 +110,10 @@ nav{
 }
 .button span:after{
     content: '\00bb';
-    font-size: 140%;
+    font-size: 150%;
     position: absolute;
     opacity: 0;
-    top: -2px;
+    top: -3px;
     right:-40px;
     transition: 0.5s;
 }
@@ -123,7 +125,7 @@ nav{
     right: 0;
 }
 .button a:link{
-    /*color: black;*/
+    color: black;
     text-decoration: none;
 }
 .button a:visited{
@@ -131,7 +133,7 @@ nav{
     
 }
 .button a:hover{
-    color :orange;
+    color :#1e9989;
 }
 
 
