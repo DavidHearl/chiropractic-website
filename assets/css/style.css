@@ -51,12 +51,18 @@ nav{
 }
 
 /*Content*/
+main{
+    margin-top: 10px;
+}
 #hero-image{
-    margin-top: 8px;
     width: 100%;
     height: 320px;
     background: url(../images/hero-image.jpg) center center;
     border-radius: 10px;
+}
+#headshot{
+    margin-left: 10%;
+    width: 90%;
 }
 #covid-text{
     text-align: center;
@@ -400,6 +406,9 @@ input[type=submit] {
     }
     .popup {
         width: 80%;
+    }
+    #headshot{
+        margin-left: 5%;
     }
     /*Hamburger Menu*/
     #menu-toggle input{
