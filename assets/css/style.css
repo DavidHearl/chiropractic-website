@@ -59,6 +59,8 @@ h1{
     font-size: 150%;
     text-align: center;
     letter-spacing: 0.5px;
+    color: #63b0a6;
+    text-decoration: underline;
 }
 h2{
     font-size:115%;
@@ -112,8 +114,9 @@ iframe{
     border-radius: 10px;
 }
 #headshot{
-    margin-left: 10%;
-    width: 90%;
+    width: 85%;
+    margin-left: 12.5%;
+    margin-top: 20px;
 }
 #practice{
     background: url(../images/duncan-treatment-room.jpg) no-repeat center center;
@@ -417,9 +420,9 @@ input[type=submit] {
         width: 40px;
         height: 32px;
         top:21px;
-        right: 4px;
+        left: 6px;
         cursor: pointer;
-        opacity: 0;/*enable to see if in the correct position*/
+        opacity: 0.2;/*enable to see if in the correct position*/
         z-index: 2;
     }
     #menu-toggle span{
@@ -428,6 +431,7 @@ input[type=submit] {
         bottom:6px;
         width: 32px;
         height: 4px;
+        left: 10px;
         margin-bottom: 5px;
         background-color: #636363;
         border-radius: 4px;
