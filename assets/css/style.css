@@ -63,9 +63,9 @@ h1{
     text-decoration: underline;
 }
 h2{
-    font-size:115%;
+    font-size:120%;
     color: #63b0a6;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 .left-column, .right-column{
     width: 50%;
@@ -86,11 +86,11 @@ h2{
     margin-bottom: 20px;   
 }
 .chunk > p{
-    margin:20px 10px;
+    margin:10px 0px 20px 10px;
     letter-spacing: .5px;
 }    
 .chunk > h2{
-    margin: 10px;  
+    margin: 10px 0 0 10px;  
 }
 .chunk p strong{
     font-weight: 600;
@@ -100,9 +100,6 @@ h2{
 }
 .chunk > ul > li{
     margin-bottom: 5px;
-}
-iframe{
-    width: 100%;
 }
 
 
@@ -204,6 +201,24 @@ iframe{
 }
 .button a:hover{
     color :#1e9989;
+}
+iframe{
+    width: 100%;
+    height: 475px;
+}
+#contact-info{
+    margin-left: 30px;
+}
+#contact-info p{
+    margin: 5px 10px;
+}
+table{
+    font-size: 110%;
+    margin: 10px 0 10px 9px;
+}
+th{
+    float: left;
+    margin-right: 20px;
 }
 
 /*Footer*/
@@ -360,7 +375,8 @@ input[type=checkbox]{
 }
 input[type=submit] {
     width: 100%;
-    margin: 10px auto;
+    margin: 0 auto;
+    margin-top: 10px;
     text-align: center;
     font-size: 150%;
     background-color: #63b0a64d;
@@ -413,6 +429,10 @@ input[type=submit] {
     #headshot{
         margin-left: 5%;
     }
+    iframe{
+        width: 92.5%;
+        margin-left: 5%;
+    }
     /*Hamburger Menu*/
     #menu-toggle input{
         display: block;
@@ -422,7 +442,7 @@ input[type=submit] {
         top:21px;
         left: 6px;
         cursor: pointer;
-        opacity: 0.2;/*enable to see if in the correct position*/
+        opacity: 0;/*enable to see if in the correct position*/
         z-index: 2;
     }
     #menu-toggle span{
