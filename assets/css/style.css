@@ -88,9 +88,11 @@ h2{
 .chunk > p{
     margin:10px 0px 20px 10px;
     letter-spacing: .5px;
+    padding-right: 30px ;
 }    
 .chunk > h2{
-    margin: 10px 0 0 10px;  
+    margin: 10px 0 0 10px;
+    padding-right: 30px;  
 }
 .chunk p strong{
     font-weight: 600;
@@ -100,6 +102,17 @@ h2{
 }
 .chunk > ul > li{
     margin-bottom: 5px;
+}
+#covid-notice{
+    border: 1px solid#1e9989;
+    width: 94%;
+    margin-right: 20px;
+}
+#covid-notice > h2{
+    margin: 5px 0 10px 10px;
+}
+#covid-notice > p{
+    margin:10px 0px 10px 10px;
 }
 
 
@@ -266,7 +279,7 @@ footer{
 .popup {
     margin: 0 auto;
     padding: 20px;
-    background: #e0f5f3;
+    background: #f3fcfb;
     border: 2px solid #63b0a6;
     border-radius: 10px;
     width: 500px;
@@ -284,6 +297,21 @@ footer{
 .popup .close:hover {
     color: #1e9989;
 }
+input[type=button] {
+    display: inline-block;
+    width: 24%;
+    height: 40px;
+    background-color: #c5e7e3;
+    border-radius: 10px;
+    border: 1px solid#1e9989;
+    font-size: 100%;
+    font-weight: 600;
+    margin-left: 5px 0 5px 1%;
+}
+.time-buttons{
+    margin-left: 1%;
+}
+
 
 
 
@@ -293,7 +321,6 @@ form{
     margin: 5px auto;
     border-radius: 20px;
 }
-
 form > div > p{
     margin: 0;
 }
@@ -305,7 +332,7 @@ form > div > p{
     padding: 5px;
 }
 label{
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 600;
     margin: 0.5%;
 }
@@ -339,25 +366,32 @@ input[type=date], input[type=time]{
     display:inline-block;
     width: 24.5%;
 }
+#checkboxes > p{
+    margin: 10px;
+}
 div ul{
     list-style: none;
 }
 #left-side, #right-side{
-    width: 46.5%;
+    display: inline-block;  
+    width: 46%;
     background-color: #63b0a60d;
-    display: inline-block;
 }
 #left-side > div{
     display:inline-block;
+}
+#right-side{
+    float: right;
 }
 #right-side > div{
     display:inline-block;
 }
 .checkbox-heading{
     width:35%;
+    margin-right: 20px;
 }
 .checkboxes{
-    width: 14%;
+    width: 10%;
 }
 .radio-heading{
     width:80%;
@@ -375,8 +409,7 @@ input[type=checkbox]{
 }
 input[type=submit] {
     width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto;
     text-align: center;
     font-size: 150%;
     background-color: #63b0a64d;
@@ -432,6 +465,15 @@ input[type=submit] {
     iframe{
         width: 92.5%;
         margin-left: 5%;
+    }
+    #covid-notice{
+        width: 100%;
+    }
+    #right-side{
+        float: none;
+    }
+    #left-side, #right-side{
+        width: 94%;
     }
     /*Hamburger Menu*/
     #menu-toggle input{
@@ -518,5 +560,9 @@ input[type=submit] {
     @media screen and (max-width: 600px) {
         .popup{width: 87%;}
         .overlay{top: 80px;}
+        #checkboxes div{width: 49%;}
+        #checkboxes div ul li{font-size: 90%;}
+        .checkbox-heading{width: 45%;}
+        }
     }
 }
