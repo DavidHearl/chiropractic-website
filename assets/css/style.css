@@ -54,7 +54,7 @@ h1{
 }
 h2{
     font-size:130%;
-    color: #17998a;
+    color: #1e9989;
     letter-spacing: 1px;
     margin: 10px 0 0 10px;
     padding-right: 30px;  
@@ -124,27 +124,9 @@ strong{font-weight: 600;}
     border: 1px dotted #63b0a6;
     border-radius: 10px;  
 }
-.home-content{
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    font-size: 105%;
-}
-#text-block{
-    width: 48%;
-}
-#text-block > p{
-    margin: 20px;
-}
-#text-block ul{
-    margin: 10px 0px 10px 50px;
-    list-style-type: disc;
-}
 .button{
-    position: relative;
     width: 80%;
     height: 100px;
-    bottom: 55px;
     margin-left: 15%;
     margin-bottom: 25px;
 
@@ -160,6 +142,8 @@ strong{font-weight: 600;}
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+/*Button Animations*/
 .button span{
     cursor: pointer;
     display: inline-block;
@@ -175,9 +159,7 @@ strong{font-weight: 600;}
     right:-40px;
     transition: 0.5s;
 }
-.button:hover span{
-    padding-right: 25px;
-}
+.button:hover span{padding-right: 25px;}
 .button:hover span:after{
     opacity: 1;
     right: 0;
@@ -186,13 +168,10 @@ strong{font-weight: 600;}
     color: black;
     text-decoration: none;
 }
-.button a:visited{
-    color: black;
-    
-}
-.button a:hover{
-    color :#1e9989;
-}
+.button a:visited{color: black;}
+.button a:hover{color :#1e9989;}
+
+/*Contact page*/
 iframe{
     width: 100%;
     height: 475px;
@@ -211,33 +190,6 @@ th{
     float: left;
     margin-right: 20px;
 }
-
-/*Footer*/
-footer{
-    width: 100%;
-    background-color: #63b0a640;
-    border-radius: 5px;
-    border: 1px solid #63b0a6;
-}
-.footer-section{
-    display: inline-block;
-    width: 24%;
-    /*margin: 0 2.5% 0 2.5%;*/
-}
-#gcc{
-    background: url(../images/gcc-registered.png) no-repeat center center;
-    width:152px;
-    height:50px;
-
-
-}
-#bca{
-    background: url(../images/bca-registered.png) no-repeat center center;
-    width:122px;
-    height: 52px;
-}
-
-
 
 /*Popup Form*/
 .overlay{
@@ -272,9 +224,7 @@ footer{
     font-weight: bold;
     text-decoration: none;
 }
-.popup .close:hover {
-    color: #1e9989;
-}
+.popup .close:hover {color: #1e9989;}
 input[type=button] {
     display: inline-block;
     width: 24%;
@@ -286,12 +236,30 @@ input[type=button] {
     font-weight: 600;
     margin-left: 5px 0 5px 1%;
 }
-.time-buttons{
-    margin-left: 1%;
+.time-buttons{margin-left: 1%;}
+
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: #63b0a640;
+    border-radius: 5px;
+    border: 1px solid #63b0a6;
 }
-
-
-
+.footer-section{
+    display: inline-block;
+    width: 24%;
+    /*margin: 0 2.5% 0 2.5%;*/
+}
+#gcc{
+    background: url(../images/gcc-registered.png) no-repeat center center;
+    width:152px;
+    height:50px;
+}
+#bca{
+    background: url(../images/bca-registered.png) no-repeat center center;
+    width:122px;
+    height: 52px;
+}
 
 /*Form*/
 form{
@@ -334,49 +302,27 @@ input[type=date], input[type=time]{
     text-align: center;
     font-size:120%
 }
-#key{
-    margin-left:5%;
-    width: 25%;
-    border:1px solid black;
-    border-radius: 5px;
-}
 #checkboxes div{
     display:inline-block;
     width: 24.5%;
 }
-#checkboxes > p{
-    margin: 10px;
-}
-div ul{
-    list-style: none;
-}
+#checkboxes > p{margin: 10px;}
+div ul{list-style: none;}
 #left-side, #right-side{
     display: inline-block;  
     width: 46%;
     background-color: #63b0a60d;
 }
-#left-side > div{
-    display:inline-block;
-}
-#right-side{
-    float: right;
-}
-#right-side > div{
-    display:inline-block;
-}
+#left-side > div{display:inline-block;}
+#right-side{float: right;}
+#right-side > div{display:inline-block;}
 .checkbox-heading{
     width:35%;
     margin-right: 20px;
 }
-.checkboxes{
-    width: 10%;
-}
-.radio-heading{
-    width:80%;
-}
-.radioboxes{
-    width: 14%;
-}
+.checkboxes{width: 10%;}
+.radio-heading{width:80%;}
+.radioboxes{width: 14%;}
 .checkbox-title{
     font-size: 90%;
     font-weight: 300;
@@ -418,15 +364,9 @@ input[type=submit] {
 
 /*Screen sizes under 1050px width*/
 @media screen and (max-width: 1050px) {
-    .home-content{
-        width: 99%;
-    }
-    .left-column, .right-column{
-        width: 100%;
-    }
-    #text-block{
-        width: 100%;
-    }
+    .home-content{width: 99%;}
+    .left-column, .right-column{width: 100%;}
+    #text-block{width: 100%;}
     .button{
         position: static;
         font-size: 120%;
@@ -437,22 +377,15 @@ input[type=submit] {
         vertical-align: middle;
         line-height: 100px;
     }
-    #headshot{
-        margin-left: 5%;
-    }
+    #headshot{margin-left: 5%;}
     iframe{
         width: 92.5%;
         margin-left: 5%;
     }
-    #covid-notice{
-        width: 100%;
-    }
-    #right-side{
-        float: none;
-    }
-    #left-side, #right-side{
-        width: 94%;
-    }
+    #covid-notice{width: 100%;}
+    #right-side{float: none;}
+    #left-side, #right-side{width: 95%;}
+
     /*Hamburger Menu*/
     #menu-toggle input{
         display: block;
@@ -491,12 +424,8 @@ input[type=submit] {
     #menu-toggle input:checked ~ span:nth-child(4){
         transform: rotate(-45deg) translate(7px, -7px);
     }
-    #menu-toggle input:checked ~ ul{
-        transform: none;
-    }
-    #menu{
-        display: none;
-    }
+    #menu-toggle input:checked ~ ul{transform: none;}
+    #menu{display: none;}
     #menu-toggle > input:checked ~ #menu{
         display: block;
         margin-top: 24px;
@@ -510,12 +439,8 @@ input[type=submit] {
         letter-spacing: 3px;
         border-radius: 10px;
     }
-    #menu a{
-        margin-top: 0px;
-    }
-    #menu > li{
-        width: 100%;
-    }
+    #menu a{margin-top: 0px;}
+    #menu > li{width: 100%;}
     .active{
         background-color:#63b0a63f;
         border-radius: 10px;
@@ -525,16 +450,15 @@ input[type=submit] {
         background-color: #aed3cf;
         border-radius: 10px;
     }
-    
-    #logo{
-        margin-top:-59px;
-    }
+    #logo{margin-top:-59px;}
     #hero-image{
         margin-top: 8px;
         width: 100%;
         height: 320px;
         background: url(../images/hero-image.jpg) no-repeat center  center;
     }
+
+    /*Screen sizes under 600px width*/
     @media screen and (max-width: 600px) {
         .popup{width: 87%;}
         .overlay{top: 80px;}
