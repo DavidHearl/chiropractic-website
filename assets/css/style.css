@@ -25,9 +25,6 @@ nav{
     font-size: 110%;
     letter-spacing: 3px;
 }
-#menu > li{
-    float: left;
-}
 #menu a{
     display: block;
     text-decoration: none;
@@ -37,84 +34,65 @@ nav{
     padding: 18px 30px;
     font-weight: 600;
 }
-#menu a:hover{
-    color: #1e9989;
-}
 .active{
     background-color:#63b0a61a;
     border: 1px solid #63b0a6;
-    color: white;
     border-radius: 10px;
 }
-#hamburger{
-    display: none;
-}
+#menu > li{float: left;}
+#menu a:hover{color: #1e9989;}
+#hamburger{display: none;}
 
 /*Universal Styles*/
-main{
-    margin-top: 10px;
-}
+main{margin-top: 10px;}
 h1{
     margin: 2px 0 10px 0; 
-    font-size: 150%;
+    font-size: 160%;
     text-align: center;
-    letter-spacing: 0.5px;
-    color: #63b0a6;
-    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #43867d;
 }
 h2{
-    font-size:120%;
-    color: #63b0a6;
+    font-size:130%;
+    color: #17998a;
     letter-spacing: 1px;
+    margin: 10px 0 0 10px;
+    padding-right: 30px;  
 }
+p{
+    margin:10px 0px 20px 10px;
+    letter-spacing: .5px;
+    padding-right: 30px ;
+}
+strong{font-weight: 600;}
+.chunk{
+    width: 100%;
+    font-size: 110%;
+    background-color: #63b0a603;
+    border-radius: 10px;
+    margin-bottom: 20px;   
+}
+.chunk > ul{margin: 0 0 5px 10px;}
+.chunk > ul > li{margin-bottom: 5px;}
+
 .left-column, .right-column{
     width: 50%;
     display: inline-block;
-}
-.right-column{
-    float: right;
 }
 .left-column > div > ul{
     list-style: disc;
     margin-left: 30px;
 }
-.chunk{
-    width: 100%;
-    font-size: 105%;
-    background-color: #63b0a603;
-    border-radius: 10px;
-    margin-bottom: 20px;   
-}
-.chunk > p{
-    margin:10px 0px 20px 10px;
-    letter-spacing: .5px;
-    padding-right: 30px ;
-}    
-.chunk > h2{
-    margin: 10px 0 0 10px;
-    padding-right: 30px;  
-}
-.chunk p strong{
-    font-weight: 600;
-}
-.chunk > ul{
-    margin: 0 0 5px 10px;
-}
-.chunk > ul > li{
-    margin-bottom: 5px;
-}
+.right-column{float: right;}
+   
+/*Covid 19 Introduction Box*/
 #covid-notice{
     border: 1px solid#1e9989;
     width: 94%;
     margin-right: 20px;
 }
-#covid-notice > h2{
-    margin: 5px 0 10px 10px;
-}
-#covid-notice > p{
-    margin:10px 0px 10px 10px;
-}
-
+#covid-notice > h2{margin: 5px 0 10px 10px;}
+#covid-notice > p{margin:10px 0px 10px 10px;}
 
 /*Images*/
 #hero-image{
@@ -135,7 +113,7 @@ h2{
     margin-left: 50px;
 }
 
-
+/*Home Page settings*/
 #covid-text{
     text-align: center;
     font-size: 120%;
@@ -563,6 +541,5 @@ input[type=submit] {
         #checkboxes div{width: 49%;}
         #checkboxes div ul li{font-size: 90%;}
         .checkbox-heading{width: 45%;}
-        }
     }
 }
