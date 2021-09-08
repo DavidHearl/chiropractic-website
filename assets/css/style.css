@@ -42,6 +42,7 @@ nav{
 #menu > li{float: left;}
 #menu a:hover{color: #1e9989;}
 #hamburger{display: none;}
+i{display: none;}
 
 /*Universal Styles*/
 main{margin-top: 10px;}
@@ -147,7 +148,6 @@ strong{font-weight: 600;}
     position: relative;
     bottom:60px;
 }
-i{display: none;}
 
 /*Button Animations*/
 .button span{
@@ -407,16 +407,19 @@ input[type=submit] {
     #checkboxes div{width: 49%;}    
     #logo{
         float: none;
-        margin-left: 37%;
-        width: 221px;
-        height: 75px;
+        position: absolute;
+        margin-left: 50%;
+        left: -110px;
+        top: 0px;
     }
     i{
         display: block;
-        float: right;
-        font-size: 100%;
-        color: black;
-        background-color: blue;
+        position: absolute;
+        font-size: 200%;
+        color: #636363;
+        right:20px;
+        top:21px;
+        cursor: pointer;
     }
     .footer-section{width: 49%;}
     #gcc{width: 49%;}
@@ -486,7 +489,6 @@ input[type=submit] {
         background-color: #aed3cf;
         border-radius: 10px;
     }
-    #logo{margin-top:-59px;}
     #hero-image{
         margin-top: 8px;
         width: 100%;
