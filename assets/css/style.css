@@ -326,10 +326,12 @@ div ul{list-style: none;}
     background-color: #63b0a60d;
 }
 #left-side > div{display:inline-block;}
+#left-side > div > ul > li > h2{margin: 0;}
+#right-side > div > ul > li > h2{margin: 0;}
 #right-side{float: right;}
 #right-side > div{display:inline-block;}
 .checkbox-heading{
-    width:35%;
+    width:40%;
     margin-right: 20px;
 }
 .checkboxes{width: 10%;}
@@ -398,6 +400,7 @@ input[type=submit] {
     #right-side{float: none;}
     #left-side, #right-side{width: 95%;}
     #buttons{bottom:0px;}
+    #checkboxes div{width: 49%;}    
     #logo{
         float: none;
         margin-left: 37%;
@@ -411,7 +414,6 @@ input[type=submit] {
         color: black;
         background-color: blue;
     }
-
 
     /*Hamburger Menu*/
     #menu-toggle input{
@@ -489,8 +491,11 @@ input[type=submit] {
     @media screen and (max-width: 600px) {
         .popup{width: 87%;}
         .overlay{top: 80px;}
-        #checkboxes div{width: 49%;}
-        #checkboxes div ul li{font-size: 90%;}
+        #checkboxes div{
+            width: 99%;
+            margin-left: 10px;
+        }
+        #checkboxes div ul li{font-size: 110%;}
         .checkbox-heading{width: 45%;}
     }
 }
