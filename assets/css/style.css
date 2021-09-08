@@ -247,7 +247,7 @@ input[type=button]{margin-top: 5px;}
 
 /*Footer*/
 footer{
-    height: 150px;
+    height: 100%;
     background-color: #63b0a640;
     border-radius: 5px;
     border: 1px solid #63b0a6;
@@ -374,6 +374,10 @@ input[type=submit] {
         max-width: 900px;
         margin: 10px;
     }
+    .footer-section p{
+        font-size: 90%;
+        letter-spacing: 0.2;
+    }
 }
 
 /*Screen sizes under 1050px width*/
@@ -414,6 +418,9 @@ input[type=submit] {
         color: black;
         background-color: blue;
     }
+    .footer-section{width: 49%;}
+    #gcc{width: 49%;}
+    #bca{width: 49%;}
 
     /*Hamburger Menu*/
     #menu-toggle input{
@@ -497,5 +504,14 @@ input[type=submit] {
         }
         #checkboxes div ul li{font-size: 110%;}
         .checkbox-heading{width: 45%;}
+        .footer-section{
+            width: 98%;
+            height: 70px;   
+            border: 1px solid pink;
+        }
+        #gcc, #bca{
+            width: 48%;
+            height: 52px;
+        }
     }
 }
