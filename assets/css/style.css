@@ -37,7 +37,7 @@ nav{
 .active{
     background-color:#63b0a61a;
     border: 1px solid #63b0a6;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 #menu > li{float: left;}
 #menu a:hover{color: #1e9989;}

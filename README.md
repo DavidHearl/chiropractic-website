@@ -1,27 +1,39 @@
-Brief
+# Duncan Lightfoot | Chiropractor
 
-The task was to create a new website for Duncan Lightfoot Chiropractic Clinic. The requirement is for the website to be accessible via any device with a variation of display sizes. A new patient form is also required to alleviate the current manual process.
+## Breif
 
-Features
+The client requested a new website for his Chiropractic Clinic. The main objective for the website is to easily display relivent information across multiple platforms. This also include a new medical form included in the website.
 
-Testing
+## Features
 
-Validator Testing
+### Existing Features
 
-User Testing
+* Navigation Bar
+    * Featured on all pages the navigation bar provides easy access to each of the 6 main pages. Accented with a ring to display which page the user is on.
+    * This allows for easy navigation without relying on the use of the browsers back button.
+    * **_Insert Image here_**
+    * The navigation bar will change to a hamburger menu once the device screen become to small.
+    * The new design features a centralised logo and a home button for easy navigation to the home page.
+    * **_Insert Image here_**
+* Appointment Form
+* Medical Form
+
+## Testing
+
+### Validation Testing
+
+### User Testing
+* Initial Testing
     
-    Midway Testing
+* Midway Testing
+    * Sent out to 4 test participants, of which one suggested addition of home button to improve navigation on smaller screens.
+* Final Testing
+
     
-    - Sent out to 4 test participants, of which one suggested addition of home button.
-    - Numerous issues were highlighted (See Below)
+    
 
 
-Unfixed Bugs and Unfinished Items
 
-- "About" Page not fully styled, more information required from client.
-- "New Patient" Page unfinished, button to new patient form is required.
-- "Contact" Page needs to be streamlined to deliver better information.
-- "New Patient Form" Encounters issues with checkboxes when page size changes"
 
 Future Updates
 
