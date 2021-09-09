@@ -31,7 +31,7 @@ nav{
     text-align: center;
     color:black;
     margin-top: 8px;
-    padding: 18px 30px;
+    padding: 16px 30px;
     font-weight: 600;
 }
 .active{
@@ -42,7 +42,7 @@ nav{
 #menu > li{float: left;}
 #menu a:hover{color: #1e9989;}
 #hamburger{display: none;}
-i{display: none;}
+i{visibility: hidden;}
 
 /*Universal Styles*/
 main{margin-top: 10px;}
@@ -257,35 +257,30 @@ input[type=button]:hover{
 
 /*Footer*/
 footer{
-    height: 100%;
+    height: 100px;
     background-color: #63b0a640;
     border-radius: 5px;
     border: 1px solid #63b0a6;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 .footer-section{
-    display: inline-block;
-    width: 25%;
-    height: 75px;    
+    width: 30%;
+    height: 75px;
+    margin-top: 10px;
+    padding-left: 4px;    
 }
 .footer-section p{
-    margin: 0;
-    padding: 0;
-    border:1px solid #1e9989;
+    margin: 4px;
 }
 #gcc{
     background: url(../images/gcc-registered.png) no-repeat center center;
-    width:25%;/*152 native*/
+    width:20%;/*152 native*/
     height: 75px;/*50 native*/
-    border:1px solid #1e9989;
 }
 #bca{
     background: url(../images/bca-registered.png) no-repeat center center;
-    width:25%;/*122 native*/
+    width:20%;/*122 native*/
     height:75px;/*52 native*/
-    border:1px solid #1e9989;
 }
 
 /*Form*/
@@ -427,6 +422,7 @@ input[type=submit] {
         top: 0px;
     }
     i{
+        visibility: visible;
         display: block;
         position: absolute;
         font-size: 200%;
@@ -438,6 +434,7 @@ input[type=submit] {
     .footer-section{width: 49%;}
     #gcc{width: 49%;}
     #bca{width: 49%;}
+    footer{flex-direction: column;}
 
     /*Hamburger Menu*/
     #menu-toggle input{
