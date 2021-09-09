@@ -233,26 +233,16 @@ th{
     text-decoration: none;
 }
 .popup .close:hover {color: #1e9989;}
-input[type=button] {
-    display: inline-block;
-    width: 24%;
-    height: 40px;
-    background-color: #c5e7e3;
-    border-radius: 10px;
-    border: 1px solid#1e9989;
-    font-size: 100%;
-    font-weight: 600;
-    margin: 5px 0 5px 1%;
+.select-time{
+    width: 99%;
+    padding: 6px 0.5%;
+    margin: 4px 0.5%;
+    border: 1px solid #63b0a6;
+    border-radius: 6px;
+    font-size: 110%;
 }
-.time-buttons{margin-left: 1%;}
-input[type=button]{
-    margin-top: 5px;
-    cursor: pointer;
-}
-input[type=button]:hover{
-    color: #ffffff;
-    background-color:#1e9989;
-}
+
+
 
 
 /*Footer*/
@@ -432,9 +422,9 @@ input[type=submit] {
         cursor: pointer;
     }
     .footer-section{width: 49%;}
+    footer{height: 200px;}
     #gcc{width: 49%;}
     #bca{width: 49%;}
-    footer{flex-direction: column;}
 
     /*Hamburger Menu*/
     #menu-toggle input{

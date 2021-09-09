@@ -54,27 +54,27 @@
                     <div class="popup">
                         <h1>Make an Appointment</h1>
                         <a class="close" href="#">&times;</a>
-                        <form method="post">
-                            <label>Name</label>
-                            <input type="text">
-                            <label>Phone</label>
-                            <input type="text">
-                            <label>Email</label>
-                            <input type="text">
-                            <label>Date</label>
-                            <input type="date">
-                            <label>Time</label>
-                            <div class="time-buttons">
-                                <input type="button" value="11:15">
-                                <input type="button" value="12:30">
-                                <input type="button" value="13:15">
-                                <input type="button" value="14:00">
-                                <input type="button" value="14:45">
-                                <input type="button" value="15:30">
-                                <input type="button" value="16:15">
-                                <input type="button" value="17:00">
-                            </div>
-                            <input type="submit">
+                        <form method="POST" action="https://formdump.codeinstitute.net/">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text">
+                            <label for="number">Phone</label>
+                            <input id="number" name="phone_number" type="text">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text">
+                            <label for="date">Date</label>
+                            <input id="date" name="date" type="date">
+                            <label for="time">Time</label>
+                            <select class="select-time">
+                                <option>11:15</option>
+                                <option>12:30</option>
+                                <option>13:15</option>
+                                <option>14:00</option>
+                                <option>14:45</option>
+                                <option>15:30</option>
+                                <option>16:15</option>
+                                <option>17:00</option>
+                            </select>
+                            <input type="submit" value="Book Appointment">
                         </form>
                     </div>
                 </div>
