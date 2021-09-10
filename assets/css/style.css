@@ -47,14 +47,14 @@ i{visibility: hidden;}
 /*Universal Styles*/
 main{margin-top: 10px;}
 h1{
-    margin: 2px 0 10px 0; 
-    font-size: 160%;
-    text-align: center;
+    font-size:130%;
+    color: #1e9989;
     letter-spacing: 1px;
-    color: #43867d;
+    margin: 10px 0 0 10px;
+    padding-right: 30px; 
 }
 h2{
-    font-size:130%;
+    font-size:110%;
     color: #1e9989;
     letter-spacing: 1px;
     margin: 10px 0 0 10px;
@@ -88,7 +88,7 @@ strong{font-weight: 600;}
 #hero-image-overlay{
     position: absolute;
     top: 280px;
-    left: 100px;
+    left: 3%;
     height: 110px;
     width: 240px;
     background-color: #1e9989b3;
@@ -267,6 +267,7 @@ footer{
     border-radius: 5px;
     border: 1px solid #63b0a6;
     display: flex;
+    margin-top: 10px;
 }
 .footer-section{
     width: 30%;
