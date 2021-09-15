@@ -16,7 +16,11 @@ The client requested a new website for his Chiropractic Clinic. The main objecti
     * The new design features a centralised logo and a home button for easy navigation to the home page.
     * **_Insert Image here_**
 * Appointment Form
+    * The home page features a button to make an appointment quickly and easily.
+    * **_Insert Image Here_** 
 * Medical Form
+    * The home page features a button which opens the form on a separate page.
+* Footer
 
 ## Testing
 

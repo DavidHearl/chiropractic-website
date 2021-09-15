@@ -85,21 +85,6 @@ strong{font-weight: 600;}
     margin-left: 30px;
 }
 .right-column{float: right;}
-#hero-image-overlay{
-    position: absolute;
-    top: 280px;
-    left: 3%;
-    height: 110px;
-    width: 240px;
-    background-color: #1e9989b3;
-    border-radius: 10px;
-}
-#hero-image-overlay p{
-    color: white;
-    font-size: 1.5rem;
-    margin: 2px;
-    font-weight: 700;
-}
    
 /*Covid 19 Introduction Box*/
 #covid-notice{
