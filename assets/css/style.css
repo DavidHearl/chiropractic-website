@@ -288,6 +288,7 @@ footer{
     width:20%;/*122 native*/
     height:75px;/*52 native*/
 }
+#drop-down{margin-top: 200px;}
 
 /*Form*/
 form{
@@ -516,6 +517,7 @@ input[type=submit] {
         height: 320px;
         background: url(../images/hero-image.jpg) no-repeat center  center;
     }
+    #drop-down{margin-top: 10px;}
 
     /*Screen sizes under 600px width*/
     @media screen and (max-width: 600px) {
