@@ -78,6 +78,7 @@
                 </div>
                 <div>
                     <ul>
+                        <li><input type="checkbox" id="diabetes" name="diabetes"><label for="diabetes">Diabetes</label></li>
                         <li><input type="checkbox" id="prostate" name="prostate"><label for="prostate">Prostate</label></li>
                         <li><input type="checkbox" id="arthritis" name="arthritis"><label for="arthritis">Arthritis</label></li>
                         <li><input type="checkbox" id="cancer" name="cancer"><label for="cancer">Cancer</label></li>
@@ -89,69 +90,127 @@
         </div>
 
         <div class="background-and-offsets" id="left-side">
-            <div class="checkbox-heading">
-                <ul>
-                    <fieldset>
-                        <li><h2>Date of Last:</h2></li>
-                        <li><label></label>Physical Examination</li>
-                        <li><label></label>Blood Test</li>
-                        <li><label></label>Spinal x-ray</li>
-                        <li><label></label>Urine Test</li>
-                        <li><label></label>Smear</li>
-                        <li><label></label>Self Breast Exam</li>
-                        <li><label></label>Self Testicular Exam</li>    
-                    </fieldset>
-                </ul>
-            </div>
-            <div class="checkboxes">
-                <ul>
-                    <label class="checkbox-title">6m</label>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                </ul>
-            </div>
-            <div class="checkboxes">
-                <ul>
-                    <label class="checkbox-title">6-18m</label>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                </ul>
-            </div>
-            <div class="checkboxes">
-                <ul>
-                    <label class="checkbox-title">18m+</label>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                </ul>
-            </div>
-            <div class="checkboxes">   
-                <ul>
-                    <label class="checkbox-title">Never</label>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                </ul>
-            </div>
+            <fieldset>
+                <legend><h2>Date of last:</h2></legend>
+                <label for="physical_examination">Physical Examination</label>
+                <select id="physical_examination" name="physical_examination">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+                <label for="blood_test">Blood Test</label>
+                <select id="blood_test" name="blood_test">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+                <label for="spinal_xray">Spinal x-ray</label>
+                <select id="spinal_xray" name="spinal_xray">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+                <label for="urine_test">Urine Test</label>
+                <select id="urine_test" name="urine_test">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+                <label for="smear">Smear</label>
+                <select id="smear" name="smear">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+                <label for="self_breast_exam">Self Breast Exam</label>
+                <select id="self_breast_exam" name="self_breast_exam">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+                <label for="self_testicular_exam">Self Testicular Exam</label>
+                <select id="self_testicular_exam" name="self_testicular_exam">
+                    <option> </option>
+                    <option>Less then 6 Months ago</option>
+                    <option>6 - 18 Months ago</option>
+                    <option>Over 18 Months ago</option>
+                    <option>Never</option>
+                </select>
+            </fieldset>
         </div>
+            <!--    <div class="checkbox-heading">
+                    <ul>
+                        <li><h2>Date of Last:</h2></li>
+                        <li><label>Physical Examination</label></li>
+                        <li><label>Blood Test</label></li>
+                        <li><label>Spinal x-ray</label></li>
+                        <li><label>Urine Test</label></li>
+                        <li><label>Smear</label></li>
+                        <li><label>Self Breast Exam</label></li>
+                        <li><label>Self Testicular Exam</label></li>    
+                    </ul>
+                </div>
+                <div class="checkboxes">
+                    <ul>
+                        <label class="checkbox-title">6m</label>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                    </ul>
+                </div>
+                <div class="checkboxes">
+                    <ul>
+                        <label class="checkbox-title">6-18m</label>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                    </ul>
+                </div>
+                <div class="checkboxes">
+                    <ul>
+                        <label class="checkbox-title">18m+</label>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                    </ul>
+                </div>
+                <div class="checkboxes">   
+                    <ul>
+                        <label class="checkbox-title">Never</label>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                    </ul>
+                </div>
+        </div>-->
 
         <div class="background-and-offsets" id="right-side">
             <div class="radio-heading">
