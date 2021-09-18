@@ -31,12 +31,11 @@
         </div>
         
         <div id="gp-consent">
-            <label for="consent">Do you consent to your G.P. being informed: </label>
-            <fieldset id="consent" name="consent">
-                <input type="radio" class="consent" name="consent"><strong>Yes</strong> 
-                <input type="radio" class="consent" name="consent"><strong>No</strong>
+            <fieldset>
+                <label for="consent">Do you consent to your G.P. being informed: </label>
+                <input type="radio" id="consent_yes" name="consent"><strong>Yes</strong> 
+                <input type="radio" id="consent_no" name="consent"><strong>No</strong>
             </fieldset>    
-                
         </div>
         
         <div class="background-and-offsets" id="checkboxes">
@@ -150,59 +149,62 @@
                 </select>
             </fieldset>
         </div>
-            
+
         <div class="background-and-offsets" id="right-side">
-            <div class="radio-heading">
-                <ul>
-                    <li><h2>Have You Ever:</h2></li>
-                    <li><label></label>Been Knocked Unconcious?</li>
-                    <li><label></label>Used a cane, crutch or other support?</li>
-                    <li><label></label>Been treated for a spine or nerve disorder?</li>
-                    <li><label></label>Had a fractured bone?</li>
-                    <li><label></label>Been hospitalised for surgery</li>
-                    <li><label></label>Been hospitalised other than surgery?</li>
-                </ul>
-            </div>
-            <div class="radio-boxes">
-                <ul>
-                    <li><label class="checkbox-title">Yes</label></li>
-                    <li><input type="radio" name="Q1"></li>
-                    <li><input type="radio" name="Q2"></li>
-                    <li><input type="radio" name="Q3"></li>
-                    <li><input type="radio" name="Q4"></li>
-                    <li><input type="radio" name="Q5"></li>
-                    <li><input type="radio" name="Q6"></li>
-                </ul>
-            </div>
-            <div class="radio-boxes">
-                <ul>
-                    <li><label class="checkbox-title">No</label></li>
-                    <li><input type="radio" name="Q1"></li>
-                    <li><input type="radio" name="Q2"></li>
-                    <li><input type="radio" name="Q3"></li>
-                    <li><input type="radio" name="Q4"></li>
-                    <li><input type="radio" name="Q5"></li>
-                    <li><input type="radio" name="Q6"></li>
-                </ul>
-            </div>
+            <fieldset>
+                <legend><h2>Have You Ever:</h2></legend>
+                <div>
+                    <p>Been Knocked Unconcious?</p>
+                    <label for="unconcious_yes">Yes</label><input type="radio" id="unconcious_yes" name="unconcious">
+                    <label for="unconcious_no">No</label><input type="radio" id="unconcious_no" name="unconcious">
+                </div>
+                <div>
+                    <p>Used a cane, crutch or other support?</p>
+                    <label for="cane_yes">Yes</label><input type="radio" id="cane_yes" name="cane">
+                    <label for="cane_no">No</label><input type="radio" id="cane_no" name="cane">
+                </div>
+                <div>
+                    <p>Been treated for a spine or nerve disorder?</p>
+                    <label for="spine_or_nerve_yes">Yes</label><input type="radio" id="spine_or_nerve_yes" name="spine_or_nerve">
+                    <label for="spine_or_nerve_no">No</label><input type="radio" id="spine_or_nerve_no" name="spine_or_nerve">
+                </div>
+                <div>
+                    <p>Had a fractured bone?</p>
+                    <label for="fractured_bone_yes">Yes</label><input type="radio" id="fractured_bone_yes" name="fractured_bone">
+                    <label for="fractured_bone_no">No</label><input type="radio" id="fractured_bone_no" name="fractured_bone">
+                </div>
+                <div>
+                    <p>Been hospitalised for surgery</p>
+                    <label for="surgery_yes">Yes</label><input type="radio" id="surgery_yes" name="surgery">
+                    <label for="surgery_no">No</label><input type="radio" id="surgery_no" name="surgery">
+                </div>
+                <div>
+                    <p>Been hospitalised other than surgery?</p>
+                    <label for="hospital_yes">Yes</label><input type="radio" id="hospital_yes" name="hospital">
+                    <label for="hospital_no">No</label><input type="radio" id="hospital_no" name="hospital">
+                </div>
+            </fieldset> 
         </div>
 
         <div class="background-and-offsets">
-            <label>Is this condition interfering with your: 
-                <input type="checkbox">Work
-                <input type="checkbox">Sleep
-                <input type="checkbox">Daily Routine
-                <input type="checkbox">Other (Specify Below)
+            <div>
+                <p>Is this condition interfering with your:</p>
+                <input type="checkbox" id="work" name="work"><label for="work">Work</label>
+                <input type="checkbox" id="sleep" name="sleep"><label for="sleep">Sleep</label>
+                <input type="checkbox" id="daily_routine" name="daily_routine"><label for="daily_routine">Daily Routine</label>
+                <input type="checkbox" id="other" name="other"><label for="other">Other (Specify Below)</label>
                 <input type="text">
-            </label>
-            
-            <label>During this past month, has it been too painful to do many of your day-to-day activites.</label>
-            <input type="text">
-
-            <label>During this past month, has your pain bee bad enough to often make you feel worried or low in mood.</label>
-            <input type="text">
+            </div>
+            <div>
+                <label>During this past month, has it been too painful to do many of your day-to-day activites.</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>During this past month, has your pain bee bad enough to often make you feel worried or low in mood.</label>
+                <input type="text">
+            </div>
         </div>
-        <input type="submit">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
