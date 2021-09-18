@@ -10,40 +10,42 @@
 
 <body>
     <form method="POST" action="https://formdump.codeinstitute.net/">
-        <h1>New Patient Form</h1>
-        <div class="background-and-offsets">
-            <label for="pf-name">Name:</label>
-            <input id=pf-name name="pf-name" type="text">
+        <fieldset>
+            <div class="background-and-offsets">
+                <legend><h1>New Patient Form</h1></legend>
+                <label for="pf-name">Name:</label>
+                <input id=pf-name name="pf-name" type="text">
+                
+                <label for="dob">Date of Birth:</label>
+                <input id="dob" name="date-of-birth" type="text">
+                
+                <label for="address_l1">Address line 1:</label>
+                <input id="address_l1" name="address-line1" type="text">
+                <label for="address_l2">Address line 2:</label>
+                <input id="address_l2" name="address-line2" type="text">
+                <label for="address_l3">Address line 3:</label>
+                <input id="address_l3" name="address-line3" type="text">
+                
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email">
+                
+                <label for="occupation">Occupation:</label>
+                <input id="occupation" name="occupation" type="text">
+            </div>
             
-            <label for="dob">Date of Birth:</label>
-            <input id="dob" name="date-of-birth" type="text">
-            
-            <label for="address">Address:</label>
-            <input id="address-l1" name="address-line1" type="text">
-            <input id="address-l2" name="address-line2" type="text">
-            <input id="address-l3" name="address-line3" type="text">
-            
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email">
-            
-            <label for="occupation">Occupation:</label>
-            <input id="occupation" name="occupation" type="text">
-        </div>
-        
-        <div id="gp-consent">
-            <fieldset>
-                <label for="consent">Do you consent to your G.P. being informed: </label>
-                <input type="radio" id="consent_yes" name="consent"><strong>Yes</strong> 
-                <input type="radio" id="consent_no" name="consent"><strong>No</strong>
-            </fieldset>    
-        </div>
-        
+            <div id="gp-consent">
+                <p>Do you consent to your G.P. being informed:</p>
+                <input type="radio" id="consent_yes" name="consent"><label for="consent_yes">Yes</label>
+                <input type="radio" id="consent_no" name="consent"><label for="consent_no">No </label>
+            </div>
+        </fieldset> 
+
         <div class="background-and-offsets" id="checkboxes">
+            <fieldset>
             <p>
                 Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
                 We need all the facts about your health before we accept your case.
             </p>
-            <fieldset>
                 <legend>This is a <strong>CONFIDENTIAL</strong> report</legend>
                 <div>
                     <ul>
@@ -187,24 +189,27 @@
         </div>
 
         <div class="background-and-offsets">
-            <div>
-                <p>Is this condition interfering with your:</p>
-                <input type="checkbox" id="work" name="work"><label for="work">Work</label>
-                <input type="checkbox" id="sleep" name="sleep"><label for="sleep">Sleep</label>
-                <input type="checkbox" id="daily_routine" name="daily_routine"><label for="daily_routine">Daily Routine</label>
-                <input type="checkbox" id="other" name="other"><label for="other">Other (Specify Below)</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>During this past month, has it been too painful to do many of your day-to-day activites.</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>During this past month, has your pain bee bad enough to often make you feel worried or low in mood.</label>
-                <input type="text">
-            </div>
-        </div>
-        <input type="submit" value="Submit">
+            <fieldset>
+                <div>
+                    <label for="interference">Is this condition interfering with your:</label>
+                    <input type="checkbox" id="work" name="work"><label for="work">Work</label>
+                    <input type="checkbox" id="sleep" name="sleep"><label for="sleep">Sleep</label>
+                    <input type="checkbox" id="daily_routine" name="daily_routine"><label for="daily_routine">Daily Routine</label>
+                    <input type="checkbox" id="other" name="other"><label for="other">Other (Specify Below)</label>
+                    <input type="text" id="interference" name="interference">
+                </div>
+                <div>
+                    <label for="pain">During this past month, has it been too painful to do many of your day-to-day activites ? (If Yes how often)</label>
+                    <input type="text" id="pain" name="pain">
+                </div>
+                <div>
+                    <label for="depression">During this past month, has your pain bee bad enough to often make you feel worried or low in mood ?</label>
+                    <input type="text" id="depression" name="depression">
+                </div>
+                
+            </fieldset>
+        </div>    
+        <input type="submit" value="Submit"> 
     </form>
 </body>
 </html>
