@@ -349,8 +349,9 @@ input[type=checkbox]{
     height: 14px;
 }
 input[type=submit] {
+    margin-left:1%;
     width: 98%;
-    margin: 5px auto;
+    /*margin: 5px auto;*/
     text-align: center;
     font-size: 150%;
     background-color: #63b0a60d;
@@ -363,7 +364,7 @@ input[type=submit] {
     cursor: pointer;
 }
 legend{margin: 0px 0 5px 8px;}
-fieldset legend h2{
+fieldset legend h2, fieldset legend h1{
     margin-left: -5px;
     margin-top: -2px;
 }
@@ -418,7 +419,7 @@ fieldset legend h2{
     }
     #covid-notice{width: 100%;}
     #right-side{float: none;}
-    #left-side, #right-side{width: 95%;}
+    #left-side, #right-side{width: 92%;}
     #buttons{bottom:0px;}
     #checkboxes div{width: 49%;}    
     #logo{
@@ -446,6 +447,10 @@ fieldset legend h2{
     }
     #gcc{width: 49%;}
     #bca{width: 49%;}
+    input[type=submit] {
+        margin-left:2%;
+        width: 96%;
+    }
 
     /*Hamburger Menu*/
     #menu-toggle input{
