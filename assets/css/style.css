@@ -136,8 +136,7 @@ strong{font-weight: 600;}
     height: 100px;
     margin-left: 15%;
     margin-bottom: 25px;
-
-    background-color: #63b0a64d;
+    background-color: #63b0a60d;
     border: 2px solid #63b0a6;
     border-radius: 50px;
 
@@ -246,7 +245,7 @@ th{
 footer{
     height: 100px;
     background-color: #63b0a640;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #63b0a6;
     display: flex;
     margin-top: 10px;
@@ -419,7 +418,7 @@ fieldset legend h2, fieldset legend h1{
     }
     #covid-notice{width: 100%;}
     #right-side{float: none;}
-    #left-side, #right-side{width: 92%;}
+    #left-side, #right-side{width: 96%;}
     #buttons{bottom:0px;}
     #checkboxes div{width: 49%;}    
     #logo{
@@ -542,5 +541,6 @@ fieldset legend h2, fieldset legend h1{
             width: 49%;
             height: 52px;
         }
+        #left-side, #right-side{width: 92%;}
     }
 }
