@@ -325,10 +325,8 @@ div ul{list-style: none;}
     background-color: #63b0a60d;
 }
 #left-side > div{display:inline-block;}
-#left-side > div > ul > li > h2{margin: 0;}
-#right-side > div > ul > li > h2{margin: 0;}
 #right-side{float: right;}
-#right-side > div{display:inline-block;}
+/*#right-side > div{display:inline-block;}*/
 .checkbox-heading{
     width:40%;
     margin-right: 20px;
@@ -358,9 +356,15 @@ input[type=submit] {
     font-weight: 700;
     cursor: pointer;
 }
-legend{
-    margin-left: 8px;
-    margin-bottom: 5px;
+legend{margin: 0px 0 5px 8px;}
+fieldset legend h2{
+    margin-left: -5px;
+    margin-top: -2px;
+}
+.have-you-ever p, .have-you-ever label{
+    display: inline-block;
+    margin: 0;
+    padding: 1px;
 }
 
 /*Screen sizes under 1300px width*/
