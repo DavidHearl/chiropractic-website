@@ -438,14 +438,14 @@ fieldset legend h2, fieldset legend h1{
         top:21px;
         cursor: pointer;
     }
-    .footer-section{width: 49%;}
-    footer{
-        height: 200px;
-        display: inline-block;
-        width: 100%;
+    .footer-section{
+        width: 35%;
     }
-    #gcc{width: 49%;}
-    #bca{width: 49%;}
+    footer{
+        height: 100px;
+        width: 100%;
+        margin-bottom:10px;
+    }
     input[type=submit] {
         margin-left:2%;
         width: 96%;
@@ -523,8 +523,8 @@ fieldset legend h2, fieldset legend h1{
     }
     #drop-down{margin-top: 10px;}
 
-    /*Screen sizes under 600px width*/
-    @media screen and (max-width: 600px) {
+    /*Screen sizes under 800px width*/
+    @media screen and (max-width: 800px) {
         .popup{width: 87%;}
         .overlay{top: 80px;}
         #checkboxes div{
@@ -542,5 +542,9 @@ fieldset legend h2, fieldset legend h1{
             height: 52px;
         }
         #left-side, #right-side{width: 92%;}
+        footer{
+            flex-direction: column;
+            height:300px;
+        }
     }
 }
