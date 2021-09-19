@@ -309,6 +309,13 @@ input[type=date], input[type=time]{
     border-radius: 6px;
     font-size: 110%;
 }
+select{
+    float: right;
+    border: 1px solid #63b0a6;
+    border-radius: 5px;
+    margin:2px;
+    width:45%;    
+}
 #gp-consent{
     text-align: center;
     font-size:120%
@@ -326,7 +333,6 @@ div ul{list-style: none;}
 }
 #left-side > div{display:inline-block;}
 #right-side{float: right;}
-/*#right-side > div{display:inline-block;}*/
 .checkbox-heading{
     width:40%;
     margin-right: 20px;
@@ -343,14 +349,14 @@ input[type=checkbox]{
     height: 14px;
 }
 input[type=submit] {
-    width: 100%;
-    margin: 10px auto;
+    width: 98%;
+    margin: 5px auto;
     text-align: center;
     font-size: 150%;
-    background-color: #63b0a64d;
+    background-color: #63b0a60d;
     color: black;
     border-radius: 10px;
-    border: 2px solid #63b0a6;
+    border: 1px solid #63b0a6;
     padding: 5px;
     border-radius: 10px;
     font-weight: 700;
@@ -365,6 +371,10 @@ fieldset legend h2{
     display: inline-block;
     margin: 0;
     padding: 1px;
+}
+.date-of-last label{
+    float: left;
+    width:50%;
 }
 
 /*Screen sizes under 1300px width*/
