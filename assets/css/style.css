@@ -96,11 +96,18 @@ strong{font-weight: 600;}
 #covid-notice > p{margin:10px 0px 10px 10px;}
 
 /*Images*/
-#hero-image{column-count: 3;}
+#hero-image{
+    display: flex;
+    flex-direction: row;
+}
 #primary{background: url(../images/primary-hero-img.jpg) no-repeat center center;}
-#secondary{background: url(../images/secondary-hero-img.jpg) no-repeat center center;}
+#secondary{
+    background: url(../images/secondary-hero-img.jpg) no-repeat center center;
+    margin: 0 0.5%;
+}
 #tertiary{background: url(../images/tertiary-hero-img.jpg) no-repeat center center;}
 #primary, #secondary, #tertiary{
+    width:33%;
     height:300px;
     background-size: cover;
     border-radius: 10px;
@@ -453,12 +460,11 @@ fieldset legend h2, fieldset legend h1{
         margin-left:2%;
         width: 96%;
     }
-    #hero-img{column-count: 2;}
-    #primary, #secondary, #tertiary{
-        height:200px;
-        background-size: cover;
-        border-radius: 10px;
+    #primary, #secondary{
+        width: 50%;
+        height: 300px
     }
+    #tertiary{display: none;}
 
     /*Hamburger Menu*/
     #menu-toggle input{
@@ -526,9 +532,15 @@ fieldset legend h2, fieldset legend h1{
     }
     #hero-image{column-count: 2;}
     #drop-down{margin-top: 10px;}
+}
 
     /*Screen sizes under 800px width*/
     @media screen and (max-width: 800px) {
+        #primary{
+            width: 100%;
+            height: 400px;
+        }
+        #secondary{display: none;}
         .popup{width: 87%;}
         .overlay{top: 80px;}
         #checkboxes div{
@@ -550,6 +562,4 @@ fieldset legend h2, fieldset legend h1{
             flex-direction: column;
             height:300px;
         }
-        #hero-image{column-count: 1;}
     }
-}
