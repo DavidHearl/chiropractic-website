@@ -29,14 +29,16 @@ The Wave chrome extension was used to highlight errors and accesability issues.
 Validation testing was run through three validation websites.
 * https://web.dev/ 
 * https://jigsaw.w3.org/css-validator/ 
-* https://validator.w3.org/nu/#textarea 
+* https://validator.w3.org/nu/
 
 During web.dev testing accessabity recieved a score of 79, which was below the average for the website. To help coroberate this low score the "Wave" chrome extension was used to identify the issue.
 The Wave extension highlighted an error with labels around the "Have you ever section", specifically the spinal question. There appeared to be an extra underscore at the end of the ID.
 Once that typo was fixed the score imporved to 95 which is more in line with the other pages.
 Following this error the 'Wave' pluging was used accross all pages and returned no errors.
 
+The jigsaw validator returns no errors, however there are some warnings regarding text styling which could be addressed in further revisions.
 
+The html validator returned warnings on all pages for "role=navigation" this was required early on in the hamburger menu creation, it is no longer required so it was removed.
 
 
 ### User Testing
