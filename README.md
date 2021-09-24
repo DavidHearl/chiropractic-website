@@ -31,6 +31,14 @@ Validation testing was run through three validation websites.
 * https://jigsaw.w3.org/css-validator/ 
 * https://validator.w3.org/nu/#textarea 
 
+During web.dev testing accessabity recieved a score of 79, which was below the average for the website. To help coroberate this low score the "Wave" chrome extension was used to identify the issue.
+The Wave extension highlighted an error with labels around the "Have you ever section", specifically the spinal question. There appeared to be an extra underscore at the end of the ID.
+Once that typo was fixed the score imporved to 95 which is more in line with the other pages.
+Following this error the 'Wave' pluging was used accross all pages and returned no errors.
+
+
+
+
 ### User Testing
 * Initial Testing
     * Inital testing was mainly completed in a test enviroment with occasional relase to 2 test participants to pull up real world errors on diffent devices.
