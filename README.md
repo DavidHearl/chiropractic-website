@@ -38,7 +38,9 @@ Following this error the 'Wave' pluging was used accross all pages and returned 
 
 The jigsaw validator returns no errors, however there are some warnings regarding text styling which could be addressed in further revisions.
 
-The html validator returned warnings on all pages for "role=navigation" this was required early on in the hamburger menu creation, it is no longer required so it was removed.
+The html validator returned warnings on all pages for "role=navigation" this was required early on in the hamburger menu creation, it is no longer required so it was removed. 
+It returned some errors reguarding legend position within the fieldset, in all cases the legend was moved directly under the fieldset.
+Finally there were some erros regarding option elements consisting purely of spaces. Instead "select an option" text was added as an option and that box was hidden, disabled and selected by deafult.
 
 
 ### User Testing

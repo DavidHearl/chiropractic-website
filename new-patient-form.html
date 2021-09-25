@@ -10,8 +10,8 @@
 
 <body>
     <form method="POST" action="https://formdump.codeinstitute.net/">
-        <fieldset>
-            <div class="background-and-offsets">
+        <div class="background-and-offsets">
+            <fieldset>
                 <legend><h1>New Patient Form</h1></legend>
                 <label for="pf-name">Name:</label>
                 <input id=pf-name name="pf-name" type="text">
@@ -31,22 +31,22 @@
                 
                 <label for="occupation">Occupation:</label>
                 <input id="occupation" name="occupation" type="text">
-            </div>
-            
-            <div id="gp-consent">
-                <p>Do you consent to your G.P. being informed:</p>
-                <input type="radio" id="consent_yes" name="consent"><label for="consent_yes">Yes</label>
-                <input type="radio" id="consent_no" name="consent"><label for="consent_no">No </label>
-            </div>
-        </fieldset> 
 
+                <div id="gp-consent">
+                    <p>Do you consent to your G.P. being informed:</p>
+                    <input type="radio" id="consent_yes" name="consent"><label for="consent_yes">Yes</label>
+                    <input type="radio" id="consent_no" name="consent"><label for="consent_no">No </label>
+                </div>
+            </fieldset>
+        </div>
+             
         <div class="background-and-offsets" id="checkboxes">
             <fieldset>
-            <p>
-                Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
-                We need all the facts about your health before we accept your case.
-            </p>
                 <legend><h2>This is a CONFIDENTIAL report</h2></legend>
+                <p>
+                    Please check the appropriate box for any of the following symptoms, which you have now or have had previously.
+                    We need all the facts about your health before we accept your case.
+                </p>
                 <div>
                     <ul>
                         <li><input type="checkbox" id="loss_of_energy" name="loss_of_energy"><label for="loss_of_energy">Loss of Energy</label></li>
@@ -96,71 +96,71 @@
                 <div class="date-of-last">
                     <label for="physical_examination">Physical Examination</label>
                     <select id="physical_examination" name="physical_examination">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>    
                 </div>
                 <div class="date-of-last">
                     <label for="blood_test">Blood Test</label>
                     <select id="blood_test" name="blood_test">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>
                 </div>
                 <div class="date-of-last">
                     <label for="spinal_xray">Spinal x-ray</label>
                     <select id="spinal_xray" name="spinal_xray">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>    
                 </div>
                 <div class="date-of-last">
                     <label for="urine_test">Urine Test</label>
                     <select id="urine_test" name="urine_test">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>    
                 </div>
                 <div class="date-of-last">
                     <label for="smear">Smear</label>
                     <select id="smear" name="smear">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>    
                 </div>
                 <div class="date-of-last">
                     <label for="self_breast_exam">Self Breast Exam</label>
                     <select id="self_breast_exam" name="self_breast_exam">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>    
                 </div>
                 <div class="date-of-last">
                     <label for="self_testicular_exam">Self Testicular Exam</label>
                     <select id="self_testicular_exam" name="self_testicular_exam">
-                        <option> </option>
-                        <option>Less then 6 Months ago</option>
-                        <option>6 - 18 Months ago</option>
-                        <option>Over 18 Months ago</option>
-                        <option>Never</option>
+                        <option hidden disabled selected value> -- select an option -- </option>
+                        <option value="less then 6 months">Less then 6 Months ago</option>
+                        <option value="6 to 18 months">6 - 18 Months ago</option>
+                        <option value="over 18 months">Over 18 Months ago</option>
+                        <option value="never">Never</option>
                     </select>    
                 </div>
             </fieldset>
