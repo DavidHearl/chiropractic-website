@@ -11,10 +11,10 @@ The client requested a new website for his Chiropractic Clinic. The main objecti
 * Navigation Bar
     * Featured on all pages the navigation bar provides easy access to each of the 6 main pages. Accented with a ring to display which page the user is on.
     * This allows for easy navigation without relying on the use of the browsers back button.
-    * **_Insert Image here_**
+    * **_Insert Navigation.png here_**
     * The navigation bar will change to a hamburger menu once the device screen become too small.
     * The new design features a centralised logo and a home button for easy navigation to the home page.
-    * **_Insert Image here_**
+    * **_Insert Navigation-Hamburger here_**
 * Appointment Form
     * The home page features a button to make an appointment quickly and easily.
     * **_Insert Image Here_** 
@@ -54,8 +54,8 @@ Finally there were some erros regarding option elements consisting purely of spa
     * It was pointed out that one of the links on the page was not quite clear, that was also ammended.
 
 ## Bugs
-* The footer does not compress correctly when the device size is changed. The customer has requested that some information be extracted from the footer and placed elseware on the website. Once the customer has finalised his requests the bug will then be fixed.
-* On the form there are a couple of boxes that do not take up the full width of the page when the device has changed. Again the customer had some alteration requests so it would be fixed once the requirements are finalised.
+* The footer does not compress as desired by the client when the device size is changed. The client has requested that some information be extracted/changed from the footer and placed elseware on the website. Once the customer has finalised his requests the bug will then be fixed.
+* On the form there are a couple of minor issues around scaling between boxes, the client has mentioned he would like the page reconfigured therefore it is not a priority to fix the bug when the feature will be changed before launch.
 
 ## Future Updates
 * Feedback from the final testing suggested that clickable links be attached to the logo, bca and gcc.

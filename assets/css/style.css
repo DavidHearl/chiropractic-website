@@ -250,6 +250,11 @@ th{
     border-radius: 6px;
     font-size: 110%;
 }
+#submit-appointment {
+    width: 100%;
+    margin-top:10px;
+    margin-left: 0;
+}
 
 /*Footer*/
 footer{
@@ -360,7 +365,6 @@ input[type=checkbox]{
 input[type=submit] {
     margin-left:1%;
     width: 98%;
-    /*margin: 5px auto;*/
     text-align: center;
     font-size: 150%;
     background-color: #63b0a60d;
@@ -427,8 +431,10 @@ fieldset legend h2, fieldset legend h1{
         margin-left: 5%;
     }
     #covid-notice{width: 100%;}
-    #right-side{float: none;}
-    #left-side, #right-side{width: 96%;}
+    #left-side, #right-side{
+        width: 96%;
+        float: none;
+    }
     #buttons{bottom:0px;}
     #checkboxes div{width: 49%;}    
     #logo{
@@ -457,8 +463,8 @@ fieldset legend h2, fieldset legend h1{
         margin-bottom:10px;
     }
     input[type=submit] {
-        margin-left:2%;
-        width: 96%;
+        margin-left: 1%;
+        width: 98%;
     }
     #primary, #secondary{
         width: 50%;
@@ -534,32 +540,43 @@ fieldset legend h2, fieldset legend h1{
     #drop-down{margin-top: 10px;}
 }
 
-    /*Screen sizes under 800px width*/
-    @media screen and (max-width: 800px) {
-        #primary{
-            width: 100%;
-            height: 400px;
-        }
-        #secondary{display: none;}
-        .popup{width: 87%;}
-        .overlay{top: 80px;}
-        #checkboxes div{
-            width: 99%;
-            margin-left: 10px;
-        }
-        #checkboxes div ul li{font-size: 110%;}
-        .checkbox-heading{width: 45%;}
-        .footer-section{
-            width: 100%;
-            height: 60px;
-        }
-        #gcc, #bca{
-            width: 49%;
-            height: 52px;
-        }
-        #left-side, #right-side{width: 92%;}
-        footer{
-            flex-direction: column;
-            height:300px;
-        }
+/*Screen sizes under 800px width*/
+@media screen and (max-width: 750px) {
+    #primary{
+        width: 100%;
+        height: 400px;
     }
+    #secondary{display: none;}
+    .popup{width: 87%;}
+    .overlay{top: 80px;}
+    #checkboxes div{
+        width: 99%;
+        margin-left: 10px;
+    }
+    #checkboxes div ul li{font-size: 110%;}
+    .checkbox-heading{width: 45%;}
+    .footer-section{
+        width: 100%;
+        height: 60px;
+    }
+    #gcc, #bca{
+        width: 49%;
+        height: 52px;
+    }
+    #left-side, #right-side{max-width: 94%;}
+    footer{
+        flex-direction: column;
+        height:300px;
+    }
+    .have-you-ever label{font-size: 0.95rem;}
+    input[type=submit] {
+        margin-left: 2%;
+        width: 96%;
+    }
+}
+
+/*Screen sizes under 600px width*/
+@media screen and (max-width: 600px) {
+    #left-side, #right-side{max-width: 92%;}
+    .have-you-ever label{font-size: 0.9rem;}
+}
