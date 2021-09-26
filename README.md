@@ -50,7 +50,21 @@ The brief requires 6 pages and a form
 
 ![Text](./assets/images/readme-images/new-patients.png)
 
+* Contact
+
+![Text](./assets/images/readme-images/contact.png)
+
+* FAQ
+
+![Text](./assets/images/readme-images/faq.png)
+
+* COVID-19
+
+![Text](./assets/images/readme-images/covid-19.png)
+
 * Footer
+
+![Text](./assets/images/readme-images/footer.png)
 
 ## Testing
 
