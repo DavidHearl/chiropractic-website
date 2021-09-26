@@ -23,48 +23,66 @@ The brief requires 6 pages and a form
     * The navigation bar will change to a hamburger menu once the device screen become too small.
     * The new design features a centralised logo and a home button for easy navigation to the home page.
 
-![Text](./assets/images/readme-images/navigation.png)
-![Text](./assets/images/readme-images/navigation-hamburger.png)
+![Navigation Menu](./assets/images/readme-images/navigation.png)
+![Navigation Menu with Hamburger and Home icons](./assets/images/readme-images/navigation-hamburger.png)
 
 * Landing Page Images
     * The landing page contains 3 images, the number of images changed based on what device the user is on. For small screens there is only 1 image and for medium size screens there are 2.
 
-![Text](./assets/images/readme-images/landing-page-images.png)
+![Home page Images](./assets/images/readme-images/landing-page-images.png)
+
 * Home Page main
     * The main page consists of two sections, one of which gives a brief overview of Duncan and what treatments he has available.
     * The other section contains two buttons, one opens a pop up in the middle of the page, this is so the user can book an appointment easily without having to contact Duncan directly. The second button opens up the new patient form in a new tab. 
 
-![Text](./assets/images/readme-images/home-page-main.png)
+![Home page content](./assets/images/readme-images/home-page-main.png)
 
 * New Patient Form
+    * The New Patient form will replace the current system. The current system which uses a PDF that gets printed out and filled in manually.
+    * One of the requirements of the form is that it is able to be printed out into an A4 sheet as the current filing system is still paper based.
+    * Checkboxes and drop down menus have been used where possible to standardise the answers from the client, further information is then obtained in person.
 
-![Text](./assets/images/readme-images/new-patient-form.png)
+![New Patient form](./assets/images/readme-images/new-patient-form.png)
 
 * About
     * The about page contains a brief description of Duncans education, speciallity and registration credentials.
     * In future this is a section that Duncan would like to impove with some more personal information to make the website appear more friendly.
 
-![Text](./assets/images/readme-images/about.png)
+![About Page](./assets/images/readme-images/about.png)
 
 * New Patients
+    * The new patient section contains specific information that would be useful to a new patient.
+    * One section outlines what the patient will need to bring with them so duncan can provide the correct treatment for their conditions.
+    * The new patient page also includes a picture of his practice to help the patient familiarise with the enviroment to ease nerves.
 
-![Text](./assets/images/readme-images/new-patients.png)
+![New Patient Page (Info/Practice Image)](./assets/images/readme-images/new-patients.png)
 
 * Contact
+    * The contact page displays a map and the address of the practice.
+    * It also contains a time table of when the practice is open.
+    * Duncans contact details are also present if needed.
 
-![Text](./assets/images/readme-images/contact.png)
+![Contact Page (Map/Time Table)](./assets/images/readme-images/contact.png)
 
 * FAQ
+    * The FAQ section contains all the frequently asked question duncan gets.
+    * For easy reading on a mobile device the text compresses into one column to make scrolling easier.
 
-![Text](./assets/images/readme-images/faq.png)
+![FAQ Page](./assets/images/readme-images/faq.png)
 
 * COVID-19
+    * The COVID-19 page displays all of the current COVID-19 measures for Duncan's practice.
+    * This page is vital as it keeps everyone up to date with the current measures in place to keep everyone safe.
+    * The client has mentioned that as restrictions are relaxing the page can either be removed or information added elsewhere as it is becoming outdated information.
 
-![Text](./assets/images/readme-images/covid-19.png)
+![Covid-19 Page](./assets/images/readme-images/covid-19.png)
 
 * Footer
+    * The footer includes important information such as Duncan's BCA membership details, which show he is a licenced medical professional.
+    * It also displayed the organisations he is affiliated with to show his treatments align with the appropriate medical conventions.
+    * The footer also contains Duncan's contact details, since they are contained in the footer they are easily accessible no matter what page the user is on.
 
-![Text](./assets/images/readme-images/footer.png)
+![Footer](./assets/images/readme-images/footer.png)
 
 ## Testing
 
@@ -86,7 +104,6 @@ The html validator returned warnings on all pages for "role=navigation" this was
 It returned some errors reguarding legend position within the fieldset, in all cases the legend was moved directly under the fieldset.
 Finally there were some erros regarding option elements consisting purely of spaces. Instead "select an option" text was added as an option and that box was hidden, disabled and selected by deafult.
 
-
 ### User Testing
 * Initial Testing
     * Inital testing was mainly completed in a test enviroment with occasional relase to 2 test participants to pull up real world errors on diffent devices.
@@ -104,6 +121,7 @@ Finally there were some erros regarding option elements consisting purely of spa
 ## Future Updates
 * Feedback from the final testing suggested that clickable links be attached to the logo, bca and gcc.
 * Create an online oppointment calendar and be able to select appointment times.
+* Infuture Duncan plans to set up some social media pages. Once this is done icons to the relivant sites can be added.
 
 ## Deployment
 The website was deployed through the GitHub 'pages' feature. It can be acessed through the link below.
