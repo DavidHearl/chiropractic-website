@@ -2,7 +2,16 @@
 
 ## Breif
 
-The client requested a new website for his Chiropractic Clinic. The main objective for the website is to easily display relivent information across multiple platforms. This also included a new medical form in the website.
+The client requested a new website for his Chiropractic Clinic. The main objective for the website is to easily display relivent information across multiple platforms.
+
+The brief requires 6 pages and a form
+* Home
+* About
+* New Patients
+* Contact
+* FAQ
+* COVID-19
+* New Patient Form
 
 ## Features
 
@@ -11,12 +20,19 @@ The client requested a new website for his Chiropractic Clinic. The main objecti
 * Navigation Bar
     * Featured on all pages the navigation bar provides easy access to each of the 6 main pages. Accented with a ring to display which page the user is on.
     * This allows for easy navigation without relying on the use of the browsers back button.
-    ![Text](./assets/images/readme-images/navigation.png)
-    ![Text](./assets/images/readme-images/navigation-hamburger.png)
-
     * The navigation bar will change to a hamburger menu once the device screen become too small.
     * The new design features a centralised logo and a home button for easy navigation to the home page.
-    * **_Insert Navigation-Hamburger here_**
+
+![Text](./assets/images/readme-images/navigation.png)
+![Text](./assets/images/readme-images/navigation-hamburger.png)
+
+* Landing Page Images
+    * The landing page contains 3 images, the number of images changed based on what device the user is on. For small screens there is only 1 image and for medium size screens there are 2.
+* Home Page main
+    * The main page consists of two sections, one of which gives a brief overview of Duncan and what treatments he has available.
+    * The other section contains two buttons, one opens a pop up in the middle of the page, this is so the user can book an appointment easily without having to contact Duncan directly. The second button opens up the new patient form in a new tab. 
+
+![Text](./assets/images/readme-images/home-page-main.png)
 * Appointment Form
     * The home page features a button to make an appointment quickly and easily.
     * **_Insert Image Here_** 
