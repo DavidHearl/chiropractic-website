@@ -28,16 +28,28 @@ The brief requires 6 pages and a form
 
 * Landing Page Images
     * The landing page contains 3 images, the number of images changed based on what device the user is on. For small screens there is only 1 image and for medium size screens there are 2.
+
+![Text](./assets/images/readme-images/landing-page-images.png)
 * Home Page main
     * The main page consists of two sections, one of which gives a brief overview of Duncan and what treatments he has available.
     * The other section contains two buttons, one opens a pop up in the middle of the page, this is so the user can book an appointment easily without having to contact Duncan directly. The second button opens up the new patient form in a new tab. 
 
 ![Text](./assets/images/readme-images/home-page-main.png)
-* Appointment Form
-    * The home page features a button to make an appointment quickly and easily.
-    * **_Insert Image Here_** 
-* Medical Form
-    * The home page features a button which opens the form on a separate page.
+
+* New Patient Form
+
+![Text](./assets/images/readme-images/new-patient-form.png)
+
+* About
+    * The about page contains a brief description of Duncans education, speciallity and registration credentials.
+    * In future this is a section that Duncan would like to impove with some more personal information to make the website appear more friendly.
+
+![Text](./assets/images/readme-images/about.png)
+
+* New Patients
+
+![Text](./assets/images/readme-images/new-patients.png)
+
 * Footer
 
 ## Testing
